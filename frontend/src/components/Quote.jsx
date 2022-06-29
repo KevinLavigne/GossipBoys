@@ -8,8 +8,7 @@ function Quote() {
         <img className="logo" src={loginlogo} alt="" />
         <div className="quote">
           <h1>
-            &quot;The best way to predict the future is to create it.&quot; -
-            Terry Grimoire
+            &quot;The best way to predict the future is to create it.&quot;
           </h1>
         </div>
       </div>
