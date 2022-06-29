@@ -31,7 +31,9 @@
     "react/jsx-no-constructed-context-values": "off",
     "react/destructuring-assignment": "off",
     "react/button-has-type": "off",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "jsx-a11y/interactive-supports-focus":"off",
+    "jsx-a11y/click-events-have-key-events":"off"
   },
   "settings": {
     "import/resolver": {

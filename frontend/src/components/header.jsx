@@ -1,8 +1,10 @@
-function Header(props) {
+function Header() {
   const object = [
+    { value: "", display: "find by theme" },
     { value: "PQ", display: "Problème de papier toilette" },
-    { value: "" },
   ];
+  const needAnInput = true;
+  const needAnSelect = true;
   return (
     <div className="flex flex-row space-evenly bgheader">
       <a href="https://grimoire-terry.netlify.app/">
@@ -14,9 +16,9 @@ function Header(props) {
         />
       </a>
       <p className="underline-offset-8">El Famoso Forum !!!</p>
-      {props.needAnInput === true ? <input /> : ""}
-      {props.needAnInput === true ? (
-        <select>
+      {needAnInput ? <input className="h-8" placeholder="find by name" /> : ""}
+      {needAnSelect ? (
+        <select className="h-8">
           {object.map((item) => {
             return <option value={item.value}> {item.display} </option>;
           })}

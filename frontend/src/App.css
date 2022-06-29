@@ -46,8 +46,7 @@ a {
 
 .left {
   display: flex;
-  
-  align-items: center;
+    align-items: center;
   justify-content: space-around;
   width: 40%;
   height: 100vh;
@@ -58,6 +57,7 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .quote {
   color: var(--background);
@@ -82,8 +82,11 @@ a {
 }
 
 .login-wrapper {
+  margin: auto;
+  width: 50%;
   display: flex;
   flex-direction: column;
+  background-color: var(--color3);
 }
 
 /* LOGIN PAGE */
@@ -109,4 +112,10 @@ a {
 
 .bgheader {
   background-color: var(--color2);
+}
+
+.topics:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.7s ease-in-out;
 }

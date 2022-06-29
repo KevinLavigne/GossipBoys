@@ -1,3 +1,8 @@
+import company from "../assets/company.png";
+import computer from "../assets/computer.png";
+import rh from "../assets/rh.png";
+import pq from "../assets/pq.png";
+
 const dashboardData = [
   {
     id: 0,
@@ -5,7 +10,7 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "AlexNymous24",
     reactions: 277,
-    img: "",
+    img: company,
   },
   {
     id: 1,
@@ -13,7 +18,7 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "AlexNymous24",
     reactions: 277,
-    img: "",
+    img: computer,
   },
   {
     id: 2,
@@ -21,7 +26,7 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "AlexNymous24",
     reactions: 277,
-    img: "",
+    img: rh,
   },
   {
     id: 3,
@@ -29,7 +34,7 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "AlexNymous24",
     reactions: 277,
-    img: "",
+    img: pq,
   },
 ];
 
