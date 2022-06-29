@@ -9,29 +9,49 @@ import offButton from "../assets/off-button.png";
 
 function NavBar() {
   return (
-    <div className="absolute navbar py-6 px-6 h-screen">
-      <ul className="flex flex-col justify-between h-full content-center place-content-center">
+    <div className="absolute navbar py-6 px-6 m-3 h-5/6 shadow-sm">
+      <ul className="flex flex-col justify-around h-full items-center">
         <NavLink to="/">
           <img
             src={plus}
             alt="+"
-            className="w-8 self-center place-self-center"
+            className="w-8 self-center place-self-center transition duration-150 ease-out hover:scale-125"
           />
         </NavLink>
         <NavLink to="/">
-          <img src={home} alt="maison" className="w-4" />
+          <img
+            src={home}
+            alt="maison"
+            className="w-4 transition duration-150 ease-out hover:scale-125"
+          />
         </NavLink>
         <NavLink to="/">
-          <img src={cloche} alt="notification" className="w-4" />
+          <img
+            src={cloche}
+            alt="notification"
+            className="w-5 transition duration-150 ease-out hover:scale-125"
+          />
         </NavLink>
         <NavLink to="/Page1">
-          <img src={star} alt="etoile" className="w-4" />
+          <img
+            src={star}
+            alt="etoile"
+            className="w-5 transition duration-150 ease-out hover:scale-125"
+          />
         </NavLink>
         <NavLink to="/Page2">
-          <img src={user} alt="utilisateur" className="w-4" />
+          <img
+            src={user}
+            alt="utilisateur"
+            className="w-5 transition duration-150 ease-out hover:scale-125"
+          />
         </NavLink>
         <NavLink to="/Page3">
-          <img src={offButton} alt="utilisateur" className="w-4" />
+          <img
+            src={offButton}
+            alt="utilisateur"
+            className="w-5 transition duration-150 ease-out hover:scale-125"
+          />
         </NavLink>
       </ul>
     </div>
