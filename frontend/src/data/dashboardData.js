@@ -1,3 +1,8 @@
+import company from "../assets/company.png";
+import computer from "../assets/computer.png";
+import rh from "../assets/rh.png";
+import pq from "../assets/pq.png";
+
 const dashboardData = [
   {
     id: 0,
@@ -5,7 +10,7 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "AlexNymous24",
     reactions: 277,
-    img: "",
+    img: company,
     feedback: [
       {
         name: "Terryble",
@@ -36,7 +41,7 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "Clemoufle",
     reactions: 277,
-    img: "",
+    img: computer,
     feedback: [
       {
         name: "Terryble",
@@ -67,7 +72,7 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "Terry",
     reactions: 277,
-    img: "",
+    img: rh,
     feedback: [
       {
         name: "Terryble",
@@ -98,7 +103,7 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "Kevin",
     reactions: 277,
-    img: "",
+    img: pq,
     feedback: [
       {
         name: "Terryble",
