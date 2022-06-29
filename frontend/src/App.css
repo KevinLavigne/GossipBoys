@@ -119,3 +119,7 @@ a {
   transform: scale(1.05);
   transition: all 0.7s ease-in-out;
 }
+.tucasselescouileecssdemerde{
+  position: fixed;
+  left:0; 
+}
