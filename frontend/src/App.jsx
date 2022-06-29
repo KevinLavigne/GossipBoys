@@ -1,17 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "@pages/Home";
-import NavBar from "@components/NavBar";
-import Page1 from "@pages/Page1";
-import Page2 from "@pages/Page2";
-import Page3 from "@pages/Page3";
-import Error404 from "@pages/error404";
+import Home from "./pages/Home";
+import Page1 from "./pages/Page1";
+import Page2 from "./pages/Page2";
+import Page3 from "./pages/Page3";
+import Error404 from "./pages/error404";
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Page1" element={<Page1 />} />

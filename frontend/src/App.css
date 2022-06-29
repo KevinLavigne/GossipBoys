@@ -3,58 +3,109 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App {
-  text-align: center;
+:root {
+  --title-font: "Montserrat", sans-serif;
+  --title-size: 72px;
+  --text-font: "Hind", sans-serif;
+  --text-size: 16px;
+  --text-color: #3e3d3d;
+  --color1: #ffc09f;
+  --color2: #79addc;
+  --color3: #ffee93;
+  --background: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: var(--text-font);
+  font-size: var(--text-size);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+/* LOGIN PAGE */
+
+.left {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  height: 100vh;
+  background-color: var(--color1);
+}
+
+.quote-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.quote {
+  color: var(--background);
+  margin: auto;
+  width: 80%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 71px;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  margin: auto;
+  width: 250px;
+  height: 150px;
+}
+.right {
+  width: 60%;
+  background-image: url("./assets/map2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* LOGIN PAGE */
+.navbar {
+  right: 0%;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.bglogin {
+  background-color: var(--color1);
+}
+
+.bglongin2 {
+  background-image: url("https://i.ibb.co/1rN83dz/Map2.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bglongin3 {
+  background-color: var(--color3);
+}
+
+.bgheader {
+  background-color: var(--color2);
 }
