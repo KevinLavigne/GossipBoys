@@ -1,23 +1,18 @@
+// import { useState } from "react";
 import { HashLink as NavLink } from "react-router-hash-link";
 
 import home from "../assets/house.png";
-import plus from "../assets/plus.png";
 import star from "../assets/etoile.png";
 import user from "../assets/utilisateur.png";
 import cloche from "../assets/cloche.png";
 import offButton from "../assets/off-button.png";
+import ModalTopic from "./ModalTopic";
 
 function NavBar() {
   return (
     <div className="absolute navbar py-6 px-6 m-3 h-5/6 shadow-sm">
       <ul className="flex flex-col justify-around h-full items-center">
-        <NavLink to="/">
-          <img
-            src={plus}
-            alt="+"
-            className="w-8 self-center place-self-center transition duration-150 ease-out hover:scale-125"
-          />
-        </NavLink>
+        <ModalTopic />
         <NavLink to="/">
           <img
             src={home}
