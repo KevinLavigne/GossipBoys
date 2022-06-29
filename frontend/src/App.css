@@ -143,3 +143,72 @@ a:hover {
 .bgheader {
   background-color: var(--color2);
 }
+
+/* Feedbacks */
+
+.feedback_container{
+  height: 100vh;
+  background-color:var(--color3);
+}
+.feedback_container h2 {
+  color: var(--color2);
+  font-size: 3rem;
+  background-color: var(--background);
+  padding: 1rem;
+}
+
+.feedback_flex_btwn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback_container_question {
+  background-color: var(--color1);
+  padding: 1rem;
+}
+
+.feedback_container_question p {
+  padding-right: 2rem;
+}
+
+.feedback_datas_container {
+  background-color: var(--color3);
+  padding: 0 10rem;
+}
+
+.feedback_data_container {
+  background-color: var(--background);
+  padding: 0.5rem;
+  margin: 2rem 5rem;
+}
+
+.feedback_input_container {
+  margin: 0 15rem;
+  position: relative;
+}
+
+.feedback_input_container input { 
+  width: 100%;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.feedback_input_container img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.25rem 1rem;
+}
+
+.feedback_fit_content {
+  display: flex;
+  margin: 1rem;
+}
+
+.feedback_flex_end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
