@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* VARIABLES GLOBALES */
-
 body {
   background-color: var(--background);
 }
@@ -44,5 +42,71 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
+/* LOGIN PAGE */
 
-/* VARIABLES GLOBALES */
+.left {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  height: 100vh;
+  background-color: var(--color1);
+}
+
+.quote-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.quote {
+  color: var(--background);
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 71px;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  margin: auto;
+  width: 250px;
+  height: 150px;
+}
+.right {
+  width: 60%;
+  background-image: url("./assets/map2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LOGIN PAGE */
+.navbar {
+  right: 0%;
+}
+
+.bglogin {
+  background-color: var(--color1);
+}
+
+.bglongin2 {
+  background-image: url("https://i.ibb.co/1rN83dz/Map2.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bglongin3 {
+  background-color: var(--color3);
+}
+
+.bgheader {
+  background-color: var(--color2);
+}

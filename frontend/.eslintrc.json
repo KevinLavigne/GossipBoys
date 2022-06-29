@@ -28,7 +28,10 @@
     ],
     "react/react-in-jsx-scope": "off",
     "react/jsx-one-expression-per-line": "off",
-    "react/jsx-no-constructed-context-values": "off"
+    "react/jsx-no-constructed-context-values": "off",
+    "react/destructuring-assignment": "off",
+    "react/button-has-type": "off",
+    "react/no-unescaped-entities": "off"
   },
   "settings": {
     "import/resolver": {
