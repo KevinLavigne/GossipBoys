@@ -37,7 +37,7 @@ function LogIn() {
   };
   return (
     <div className="right">
-      <div className="login-wrapper rounded-lg shadow-2xl">
+      <div className="login-wrapper rounded-lg shadow-2xl w-1/3">
         <form className="login-wrapper" onSubmit={handleSubmit(onSubmit)}>
           <h1 className="hi pt-5 pb-5 ps-5 pe-5 ms-5 me-5">Hi, Bitchers</h1>
           <input
@@ -56,10 +56,10 @@ function LogIn() {
           />
           <p>{errors.password?.message}</p>
           <button type="submit" className="loginbtn rounded-full mb-5 mt-10">
-            Bitch In
+            <p className="text-login-btn">Bitch In</p>
           </button>
           <p className="mb-10 mt-10 pl-3 pr-3 text-white">
-            You dont have an account ? Get close from your company{" "}
+            You dont have an account ? <br /> Get close from your company{" "}
           </p>
         </form>
       </div>

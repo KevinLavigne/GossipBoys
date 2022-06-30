@@ -35,13 +35,13 @@ function NavBar() {
         <button type="button" onClick={() => handleClickOnFavorite()}>
           {favorite && favorite ? (
             <img
-              src={starBlack}
+              src={starYellow}
               alt="etoile"
               className="w-5 transition duration-150 ease-out hover:scale-125"
             />
           ) : (
             <img
-              src={starYellow}
+              src={starBlack}
               alt="etoile"
               className="w-5 transition duration-150 ease-out hover:scale-125"
             />
