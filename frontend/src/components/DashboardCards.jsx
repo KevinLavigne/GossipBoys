@@ -1,6 +1,7 @@
 import "../App.css";
 import { useNavigate } from "react-router-dom";
-import etoile from "../assets/etoile.png";
+import starBlack from "../assets/star_black.svg";
+import starYellow from "../assets/star_yellow.svg";
 
 function DashboardCards({ data, handleCheckStar }) {
   const navigate = useNavigate();
@@ -22,7 +23,11 @@ function DashboardCards({ data, handleCheckStar }) {
           <div className="flex justify-end pb-14 m-3">
             <h3 className="flex items-center">{data.reactions} Reactions</h3>
             <button type="button" onClick={() => handleCheckStar(data)}>
-              <img src={etoile} alt="Etoile" className="w-7 ml-14" />
+              {data.check ? (
+                <img src={starBlack} alt="Etoile" className="w-7 ml-14" />
+              ) : (
+                <img src={starYellow} alt="Etoile" className="w-7 ml-14" />
+              )}
             </button>
           </div>
           <div className="m-4 text-darkGrey text-xs">
