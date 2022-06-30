@@ -2,7 +2,7 @@ import "../App.css";
 import { useNavigate } from "react-router-dom";
 import etoile from "../assets/etoile.png";
 
-function DashboardCards({ data }) {
+function DashboardCards({ data, handleCheckStar }) {
   const navigate = useNavigate();
 
   return (
@@ -21,7 +21,7 @@ function DashboardCards({ data }) {
         <div className="flex flex-col">
           <div className="flex justify-end pb-14 m-3">
             <h3 className="flex items-center">{data.reactions} Reactions</h3>
-            <button type="button">
+            <button type="button" onClick={() => handleCheckStar(data)}>
               <img src={etoile} alt="Etoile" className="w-7 ml-14" />
             </button>
           </div>
