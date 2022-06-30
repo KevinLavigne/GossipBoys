@@ -228,3 +228,14 @@ a:hover {
 }
 
 /*Progess Bar */
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color2);
+}
+
+.header-wrapper img {
+  width: 10%;
+}
