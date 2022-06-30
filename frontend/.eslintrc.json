@@ -32,9 +32,11 @@
     "react/destructuring-assignment": "off",
     "react/button-has-type": "off",
     "react/no-unescaped-entities": "off",
-    "jsx-a11y/interactive-supports-focus": "off",
-    "jsx-a11y/click-events-have-key-events": "off",
-    "react/jsx-boolean-value": "off"
+    "jsx-a11y/interactive-supports-focus":"off",
+    "jsx-a11y/click-events-have-key-events":"off",
+    "react/jsx-boolean-value":"off",
+    "no-unused-expressions":"off",
+    "object-shorthand":"off"
   },
   "settings": {
     "import/resolver": {
