@@ -1,5 +1,5 @@
 import "../App.css";
-import Bitchmeplease from "../assets/logo-without-title.png";
+import Bitchmeplease from "../assets/newlogotitlewhite.png";
 
 function Quote() {
   return (
