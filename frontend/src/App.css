@@ -22,8 +22,6 @@ body {
   --color2: #a4161a;
   --color3: #b1a7a6;
   --background: white;
-
- 
 }
 
 h1,
@@ -144,19 +142,15 @@ a:hover {
   background-color: var(--color2);
 }
 
-
 .topics:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: all 0.7s ease-in-out;
 }
-.tucasselescouileecssdemerde {
-  position: fixed;
-  left: 0;
 
-.tucasselescouileecssdemerde{
+.tucasselescouileecssdemerde {
   position: absolute;
-  left:0;
+  left: 0;
 }
 
 /* Feedbacks */
@@ -226,7 +220,6 @@ a:hover {
   align-items: center;
 }
 
-
 /*Progess Bar */
 
 .label {
@@ -235,5 +228,3 @@ a:hover {
 }
 
 /*Progess Bar */
-
-

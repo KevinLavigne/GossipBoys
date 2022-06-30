@@ -3,7 +3,6 @@ import Header from "../components/header";
 import NavBar from "../components/NavBar";
 import Analysis from "../components/Analysis";
 
-
 function Page3() {
   const [pg3, setPg3] = useState([]);
   console.warn(`${pg3} ${setPg3}`);
