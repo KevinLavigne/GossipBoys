@@ -20,7 +20,7 @@ function NavBar() {
             className="w-4 transition duration-150 ease-out hover:scale-125"
           />
         </NavLink>
-        <NavLink to="/">
+        <NavLink to="/Page3">
           <img
             src={cloche}
             alt="notification"

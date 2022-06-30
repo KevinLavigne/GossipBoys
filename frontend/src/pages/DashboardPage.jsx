@@ -8,7 +8,7 @@ function DashboardPage() {
   console.warn(`${pg1} ${setPg1}`);
   return (
     <div>
-      <Header />
+      <Header isDashboard={true} />
       <NavBar />
       <h1>DashboardPage dude !</h1>
       <Dashboard />
