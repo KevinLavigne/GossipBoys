@@ -1,14 +1,19 @@
-// import { useState } from "react";
+import { useContext } from "react";
 import { HashLink as NavLink } from "react-router-hash-link";
 
 import home from "../assets/house.png";
-import star from "../assets/etoile.png";
+import starBlack from "../assets/star_black.svg";
+import starYellow from "../assets/star_yellow.svg";
 import user from "../assets/utilisateur.png";
 import cloche from "../assets/cloche.png";
 import offButton from "../assets/off-button.png";
 import ModalTopic from "./ModalTopic";
 
+import ExportContext from "../contexts/Context";
+
 function NavBar() {
+  const { favorite, handleClickOnFavorite } = useContext(ExportContext.Context);
+
   return (
     <div className="absolute navbar py-6 px-6 m-3 h-5/6 shadow-sm">
       <ul className="flex flex-col justify-around h-full items-center">
@@ -27,13 +32,21 @@ function NavBar() {
             className="w-5 transition duration-150 ease-out hover:scale-125"
           />
         </NavLink>
-        <NavLink to="/Page1">
-          <img
-            src={star}
-            alt="etoile"
-            className="w-5 transition duration-150 ease-out hover:scale-125"
-          />
-        </NavLink>
+        <button type="button" onClick={() => handleClickOnFavorite()}>
+          {favorite && favorite ? (
+            <img
+              src={starBlack}
+              alt="etoile"
+              className="w-5 transition duration-150 ease-out hover:scale-125"
+            />
+          ) : (
+            <img
+              src={starYellow}
+              alt="etoile"
+              className="w-5 transition duration-150 ease-out hover:scale-125"
+            />
+          )}
+        </button>
         <NavLink to="/user-account">
           <img
             src={user}
