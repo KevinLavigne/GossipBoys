@@ -254,3 +254,7 @@ a:hover {
 .report_container.shadow-md img {
 margin: 0 0 0rem 1rem;
 }
+
+.feedback_main_text {
+  padding-top: 2rem ;
+}
