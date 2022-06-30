@@ -17,7 +17,7 @@ body {
   --title-size: 72px;
   --text-font: "Hind", sans-serif;
   --text-size: 16px;
-  --text-color: white;
+  --text-color: black;
   --color1: #161a1d;
   --color2: #a4161a;
   --color3: #b1a7a6;
@@ -118,6 +118,13 @@ a:hover {
 .signup {
   font-weight: bold;
   color: green;
+}
+form input {
+  font-weight: bold;
+}
+form p {
+  font-weight: bold;
+  color: #a4161a;
 }
 
 /* LOGIN PAGE */

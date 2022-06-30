@@ -37,8 +37,10 @@ function LogIn() {
   };
   return (
     <div className="right">
+
       <div className="login-wrapper rounded-lg shadow-2xl w-1/3">
         <form className="login-wrapper" onSubmit={handleSubmit(onSubmit)}>
+
           <h1 className="hi pt-5 pb-5 ps-5 pe-5 ms-5 me-5">Hi, Bitchers</h1>
           <input
             {...register("email", { required: true })}
