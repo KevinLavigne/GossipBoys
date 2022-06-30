@@ -20,9 +20,7 @@ function NavBar() {
         <div>
           <ModalTopic />
         </div>
-    <div className="fixed navbar py-6 px-6 m-3 h-5/6 shadow-lg">
-      <ul className="flex flex-col justify-around h-full items-center">
-        <ModalTopic />
+
         <NavLink to="/dashboard">
           <img
             src={home}

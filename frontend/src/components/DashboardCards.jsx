@@ -11,7 +11,6 @@ function DashboardCards({ data, handleCheckStar }) {
       <div className="flex justify-between bg-white text-darkGrey w-11/12 mb-8 shadow-lg ">
         <div
           className=" flex flex-start linkDashboardCard"
-          className=" flex flex-start"
           role="link"
           onClick={() => {
             navigate(`/dashboard/${data.id + 1}`);
@@ -23,7 +22,6 @@ function DashboardCards({ data, handleCheckStar }) {
         <div className="flex flex-col">
           <div className="flex justify-end pb-14 m-3">
             <h3 className="flex items-center mr-14 text-darkGrey">
-            <h3 className="flex items-center text-darkGrey">
               {data.reactions} Reactions
             </h3>
             <button type="button" onClick={() => handleCheckStar(data)}>
@@ -31,9 +29,6 @@ function DashboardCards({ data, handleCheckStar }) {
                 <img src={starYellow} alt="Etoile" className="w-7" />
               ) : (
                 <img src={starBlack} alt="Etoile" className="w-7" />
-                <img src={starYellow} alt="Etoile" className="w-7 ml-14" />
-              ) : (
-                <img src={starBlack} alt="Etoile" className="w-7 ml-14" />
               )}
             </button>
           </div>

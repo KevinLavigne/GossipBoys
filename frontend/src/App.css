@@ -17,7 +17,7 @@ body {
   --title-size: 72px;
   --text-font: "Hind", sans-serif;
   --text-size: 16px;
-  --text-color: black;
+  --text-color: white;
   --color1: #161a1d;
   --color2: #a4161a;
   --color3: #b1a7a6;
@@ -97,8 +97,8 @@ a:hover {
 .login-wrapper input {
   color: var(--text-color);
 }
-.text-login-btn{
-  color: var(--text-color)
+.text-login-btn {
+  color: var(--text-color);
 }
 
 .loginbtn {
@@ -292,7 +292,6 @@ form p {
   width: 10%;
 }
 
-
 .shawdow {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -374,7 +373,7 @@ form p {
   transition: 1s ease-in-out;
   cursor: pointer;
 }
-=======
+
 .dashboard-bg {
   background-color: var(--color3);
 }
@@ -383,12 +382,12 @@ form p {
 
 .disclaimer-button {
   font-family: var(--title-font);
-  font-size:x-large;
+  font-size: x-large;
 }
 
 .disclaimer-text {
   font-family: var(--title-font);
-  font-size:160px;
+  font-size: 160px;
 }
 
 .disclaimer-paragraph {
