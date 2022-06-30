@@ -1,54 +1,35 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import dashboardData from "../data/dashboardData";
+import OneFeedback from "./OneFeedback";
 import Header from "./header";
 import NavBar from "./NavBar";
 
 import bubble from "../assets/bubble.png";
-import arrow1 from "../assets/arrow1.png";
-import arrow2 from "../assets/arrow2.png";
 
 function Feedback() {
   const { id } = useParams();
-
-  const data = dashboardData.filter((el) => el.id === parseInt(id, 10));
 
   return (
     <div>
       <Header />
       <NavBar />
       <div className="feedback_container">
-        <h2> Feedbacks </h2>
+        <h2> Bitching Area </h2>
 
         <div className="feedback_flex_btwn feedback_container_question">
-          <h3>{data[0].title}</h3>
+          <h3>{dashboardData[id].title}</h3>
           <p>
-            Created on: {data[0].date} by {data[0].Poster}
+            Created on: {dashboardData[id].date} by {dashboardData[id].Poster}
           </p>
         </div>
         <div className="feedback_datas_container">
-          {data[0].feedback.map((el) => (
-            <div className="feedback_data_container">
-              <div className="feedback_flex_btwn">
-                <p>{el.name}</p>
-                <p>{el.date}</p>
-              </div>
-              <p>{el.text}</p>
-              <div className="feedback_flex_end">
-                <button className="feedback_fit_content">
-                  <img src={arrow1} alt="arrow to set plus" />
-                  {el.plus}
-                </button>
-                <button className="feedback_fit_content">
-                  <img src={arrow2} alt="arrow to set minus" />
-                  {el.minus}
-                </button>
-              </div>
-            </div>
+          {dashboardData[id].feedback.map((el) => (
+            <OneFeedback el={el} />
           ))}
         </div>
         <div className="feedback_input_container">
-          <input type="text" />
+          <input type="text" placeholder="Write your bitching feedback here" />
           <img src={bubble} alt="bubble for message" />
         </div>
       </div>
