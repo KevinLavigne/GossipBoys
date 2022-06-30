@@ -12,10 +12,12 @@ const dashboardData = [
     reactions: 277,
     color: "bg-red-500",
     colorForC: "#ef4444",
+    category: "company",
     completed: 80,
     numberForC: 28.3,
+    check: false,
     comments:
-      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium",
+      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal",
     img: company,
     feedback: [
       {
@@ -51,8 +53,9 @@ const dashboardData = [
     colorForC: "#3b82f6",
     numberForC: 6.8,
     completed: 43,
+    check: false,
     comments:
-      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium",
+      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal",
     img: computer,
     feedback: [
       {
@@ -88,6 +91,7 @@ const dashboardData = [
     colorForC: "#f97316",
     numberForC: 28.7,
     completed: 28,
+    check: false,
     comments:
       "Dude... Windows 98 is just the best it rocks what's your problem!?",
     img: rh,
@@ -125,8 +129,9 @@ const dashboardData = [
     colorForC: "#22c55e",
     numberForC: 36.3,
     completed: 57,
+    check: false,
     comments:
-      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium",
+      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project",
     img: pq,
     feedback: [
       {

@@ -4,10 +4,12 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 function AnalysisCards({ data }) {
   return (
-    <div className="flex flex-col w-full m-8">
-      <div className="flex flex-col mr-32">
-        <div className="flex flex-col shadow-lg p-4">
-          <div className={`${data.color} h-6 w-6 mb-2 boder rounded`} />
+    <div className="topic-cards flex flex-col m-4">
+      <div className="topic-cards flex flex-col justify-center w-4/5">
+        <div className="topic-cards flex flex-col shawdow p-4">
+          <div
+            className={`topic-cards ${data.color} h-6 w-6 mb-2 boder rounded`}
+          />
           <p className="text-xl text-center">{data.comments}</p>
           <div className="mt-4 opacity-50">
             <ProgressBar

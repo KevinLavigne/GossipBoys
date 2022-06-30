@@ -15,35 +15,38 @@ function NavBar() {
   const { favorite, handleClickOnFavorite } = useContext(ExportContext.Context);
 
   return (
-    <div className="absolute navbar py-6 px-6 m-3 h-5/6 shadow-lg">
-      <ul className="flex flex-col justify-around h-full items-center">
-        <ModalTopic />
+    <div className="navbar  flex h-full jusytify-center rounded shadow-lg  fixed z-50">
+      <ul className="flex flex-col justify-around h-full  items-center ">
+        <div>
+          <ModalTopic />
+        </div>
+
         <NavLink to="/dashboard">
           <img
             src={home}
             alt="maison"
-            className="w-4 transition duration-150 ease-out hover:scale-125"
+            className="w-4 transition duration-150 ease-out hover:scale-125  jusytify-center "
           />
         </NavLink>
         <NavLink to="/Page3">
           <img
             src={cloche}
             alt="notification"
-            className="w-5 transition duration-150 ease-out hover:scale-125"
+            className="w-5 transition duration-150 ease-out hover:scale-125 "
           />
         </NavLink>
         <button type="button" onClick={() => handleClickOnFavorite()}>
           {favorite && favorite ? (
             <img
-              src={starBlack}
+              src={starYellow}
               alt="etoile"
-              className="w-5 transition duration-150 ease-out hover:scale-125"
+              className="w-5 transition duration-150 ease-out hover:scale-125 "
             />
           ) : (
             <img
-              src={starYellow}
+              src={starBlack}
               alt="etoile"
-              className="w-5 transition duration-150 ease-out hover:scale-125"
+              className="w-5 transition duration-150 ease-out hover:scale-125 "
             />
           )}
         </button>
@@ -51,14 +54,14 @@ function NavBar() {
           <img
             src={user}
             alt="utilisateur"
-            className="w-5 transition duration-150 ease-out hover:scale-125"
+            className="w-5 transition duration-150 ease-out hover:scale-125 "
           />
         </NavLink>
         <NavLink to="/">
           <img
             src={offButton}
             alt="utilisateur"
-            className="w-5 transition duration-150 ease-out hover:scale-125"
+            className="w-5 transition duration-150 ease-out hover:scale-125 "
           />
         </NavLink>
       </ul>

@@ -6,6 +6,16 @@ function Provider({ children }) {
   const [state, setState] = useState([]);
   const [state2, setState2] = useState([]);
   const [favorite, setFavorite] = useState(false);
+  const [nameFilter, setNameFilter] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("");
+
+  const handleChangeNameFilter = (value) => {
+    setNameFilter(value);
+  };
+
+  const handleChangeCatégoryFilter = (value) => {
+    setCategoryFilter(value);
+  };
 
   const handleClickOnFavorite = () => {
     setFavorite(!favorite);
@@ -20,6 +30,10 @@ function Provider({ children }) {
         setState2,
         favorite,
         handleClickOnFavorite,
+        categoryFilter,
+        handleChangeCatégoryFilter,
+        handleChangeNameFilter,
+        nameFilter,
       }}
     >
       {children}
