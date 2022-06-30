@@ -25,9 +25,15 @@ SET
 
 -- -----------------------------------------------------
 
-CREATE SCHEMA IF NOT EXISTS `apside` DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA IF NOT EXISTS `bitch_me_please` DEFAULT CHARACTER SET utf8;
 
-USE `apside` ;
+USE `bitch_me_please` ;
+
+DROP TABLE IF EXISTS `bitch_me_please`.`users` ;
+
+DROP TABLE IF EXISTS `bitch_me_please`.`topics` ;
+
+DROP TABLE IF EXISTS `bitch_me_please`.`TopicsDetails` ;
 
 -- -----------------------------------------------------
 
@@ -36,7 +42,7 @@ USE `apside` ;
 -- -----------------------------------------------------
 
 CREATE TABLE
-    IF NOT EXISTS `apside`.`users` (
+    IF NOT EXISTS `bitch_me_please`.`users` (
         `id` INT NOT NULL AUTO_INCREMENT,
         `email` VARCHAR(255) NOT NULL,
         `hashedPassword` VARCHAR(255) NOT NULL,
@@ -52,7 +58,7 @@ CREATE TABLE
 -- -----------------------------------------------------
 
 CREATE TABLE
-    IF NOT EXISTS `apside`.`topics` (
+    IF NOT EXISTS `bitch_me_please`.`topics` (
         `id` INT NOT NULL AUTO_INCREMENT,
         `title` VARCHAR(155) NOT NULL,
         `date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
@@ -72,7 +78,7 @@ CREATE TABLE
 -- -----------------------------------------------------
 
 CREATE TABLE
-    IF NOT EXISTS `apside`.`TopicsDetails` (
+    IF NOT EXISTS `bitch_me_please`.`TopicsDetails` (
         `id` INT NOT NULL AUTO_INCREMENT,
         `date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
         `text` LONGTEXT NOT NULL,

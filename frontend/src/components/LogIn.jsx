@@ -5,7 +5,7 @@
 import "../App.css";
 // import { HashLink as NavLink } from "react-router-hash-link";
 import * as yup from "yup";
-import { useNavigate } from "react-router-dom";
+
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -21,7 +21,6 @@ const schema = yup.object({
 });
 
 function LogIn() {
-  const navigate = useNavigate();
   const {
     handleSubmit,
     register,
@@ -39,30 +38,29 @@ function LogIn() {
   return (
     <div className="right">
       <div className="login-wrapper rounded-lg shadow-2xl">
-        <h1 className="hi pt-10 pb-10 pl-10 pr-10 ml-5 mr-5">Hi, Bitchers</h1>
-        <form className="login-wrapper " onSubmit={handleSubmit(onSubmit)}>
+        <form className="login-wrapper" onSubmit={handleSubmit(onSubmit)}>
+          <h1 className="hi pt-5 pb-5 ps-5 pe-5 ms-5 me-5">Hi, Bitchers</h1>
           <input
-            {...register("email")}
+            {...register("email", { required: true })}
             type="text"
-            className="w-50 h-10 p-2 m-3 bg-white border-2 justify-evenly"
+            className="w-50 h-10 p-2 m-3 bg-white border-2
+          justify-evenly"
             placeholder="Your Email"
           />
-          <p className="text-red-700 font-bold">{errors.email?.message}</p>
+          <p>{errors.email?.message}</p>
           <input
-            {...register("password")}
+            {...register("password", { required: true })}
             type="password"
             className="w-50 h-10 p-2 m-3 bg-white border-2  justify-evenly"
             placeholder="Your Password"
           />
-          <p className="text-red-700 font-bold">{errors.password?.message}</p>
-          <button
-            type="submit"
-            formMethod="PUT"
-            className="loginbtn rounded-full mb-10 mt-10"
-            onClick={() => navigate("/dashboard")}
-          >
-            Log In
+          <p>{errors.password?.message}</p>
+          <button type="submit" className="loginbtn rounded-full mb-5 mt-10">
+            Bitch In
           </button>
+          <p className="mb-10 mt-10 pl-3 pr-3 text-white">
+            You dont have an account ? Get close from your company{" "}
+          </p>
         </form>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "../components/header";
 import NavBar from "../components/NavBar";
+import Analysis from "../components/Analysis";
 
 function Page3() {
   const [pg3, setPg3] = useState([]);
@@ -10,6 +11,7 @@ function Page3() {
       <Header />
       <NavBar />
       <div>Page3</div>
+      <Analysis />
     </div>
   );
 }

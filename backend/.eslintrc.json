@@ -10,6 +10,7 @@
   },
   "rules": {
     "no-console": "off",
+    "object-shorthand":"off",
     "no-restricted-syntax": [
       "error",
       {
