@@ -17,10 +17,10 @@ body {
   --title-size: 72px;
   --text-font: "Hind", sans-serif;
   --text-size: 16px;
-  --text-color: #3e3d3d;
-  --color1: #ffc09f;
-  --color2: #79addc;
-  --color3: #ffee93;
+  --text-color: #161A1D;
+  --color1: #161A1D;
+  --color2: #A4161A;
+  --color3: #B1A7A6;
   --background: #ffffff;
 }
 
@@ -147,7 +147,7 @@ a:hover {
 
 .tucasselescouileecssdemerde{
   position: absolute;
-  left:0; 
+  left:0;
 }
 
 /* Feedbacks */
