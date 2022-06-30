@@ -292,3 +292,26 @@ margin: 0 0 0rem 1rem;
 .dashboard-bg {
   background-color: var(--color3);
 }
+
+/* Disclaimer CSS Start */
+
+.disclaimer-button {
+  font-family: var(--title-font);
+  font-size:x-large;
+}
+
+.disclaimer-text {
+  font-family: var(--title-font);
+  font-size:160px;
+}
+
+.disclaimer-paragraph {
+  font-family: var(--title-font);
+  text-align: center;
+}
+
+.disclaimer-eye {
+  width: 180px;
+}
+
+/* Dislaimer CSS End */
