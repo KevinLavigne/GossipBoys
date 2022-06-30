@@ -12,11 +12,11 @@ function Feedback() {
 
   return (
     <div>
-      <Header />
+      <Header isDashboard={true} />
       <NavBar />
-      <div className="flex flex-col bg-wight ml-28 mb-8 mt-8">
+      <div className="flex flex-col bg-wight ml-32 mb-8 mt-8">
         <h2 className="text-darkRed underline underline-offset-8 text-6xl decoration-8 decoration-darkGrey ">
-          Bitching Area
+          Place to bitch
         </h2>
       </div>
 
