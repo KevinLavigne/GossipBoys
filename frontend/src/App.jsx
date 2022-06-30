@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import Home from "./pages/Home";
-import Page1 from "./pages/Page1";
-import Page2 from "./pages/Page2";
+import DashboardPage from "./pages/DashboardPage";
+import UserAccount from "./pages/UserAccount";
 import Page3 from "./pages/Page3";
 import Error404 from "./pages/error404";
 import Feedback from "./components/Feedback";
@@ -13,9 +13,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Page1" element={<Page1 />} />
-        <Route path="/Page1/:id" element={<Feedback />} />
-        <Route path="/Page2" element={<Page2 />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/dashboard/:id" element={<Feedback />} />
+        <Route path="/user-account" element={<UserAccount />} />
         <Route path="/Page3" element={<Page3 />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
