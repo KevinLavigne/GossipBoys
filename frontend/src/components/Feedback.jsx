@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import dashboardData from "../data/dashboardData";
 import OneFeedback from "./OneFeedback";
@@ -9,6 +9,12 @@ import bubble from "../assets/bubble.png";
 
 function Feedback() {
   const { id } = useParams();
+
+  const [data, setData] = useState();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setData(dashboardData[id].feedback.push(e.target.value));
+  };
 
   return (
     <div>
@@ -28,10 +34,13 @@ function Feedback() {
             <OneFeedback el={el} />
           ))}
         </div>
-        <div className="feedback_input_container">
-          <input type="text" />
+        <form
+          className="feedback_input_container"
+          onSubmit={() => handleSubmit}
+        >
+          <input type="text" value={data} />
           <img src={bubble} alt="bubble for message" />
-        </div>
+        </form>
       </div>
     </div>
   );

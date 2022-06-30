@@ -9,18 +9,21 @@ function Report({ setOpenDots, setHide, report, setReport }) {
   };
 
   return (
-    <ul className="flex flex-col content-center">
+    <ul className="flex flex-col content-center report_button">
       <button className="flex justify-start" onClick={() => setHide(true)}>
         Hide <img src={hidden} alt="eye hidden" />
       </button>
       <button
-        className="flex justify-start content-center"
+        className="flex justify-start content-center report_button"
         onClick={() => reportClick(setOpenDots, setReport, report)}
       >
-        <p>
-          Report <span className="report">{report ? `(1)` : ""}</span>
-        </p>
-        <img src={exclamation} alt=" exclamation point" />
+        <p>Report</p>
+        <img
+          src={exclamation}
+          alt=" exclamation point"
+          className="report_img"
+        />
+        <span className="report">{report ? `(1)` : ""}</span>
       </button>
     </ul>
   );
