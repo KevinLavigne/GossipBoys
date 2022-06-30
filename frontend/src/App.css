@@ -152,7 +152,7 @@ a:hover {
   transition: all 0.7s ease-in-out;
 }
 .tucasselescouileecssdemerde{
-  position: fixed;
+  position: absolute;
   left:0; 
 }
 

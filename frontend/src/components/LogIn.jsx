@@ -5,6 +5,7 @@
 import "../App.css";
 // import { HashLink as NavLink } from "react-router-hash-link";
 import * as yup from "yup";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -20,6 +21,7 @@ const schema = yup.object({
 });
 
 function LogIn() {
+  const navigate = useNavigate();
   const {
     handleSubmit,
     register,
@@ -57,6 +59,7 @@ function LogIn() {
             type="submit"
             formMethod="PUT"
             className="loginbtn rounded-full mb-10 mt-10"
+            onClick={() => navigate("/dashboard")}
           >
             Log In
           </button>
