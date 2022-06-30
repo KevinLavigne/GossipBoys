@@ -10,6 +10,12 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "AlexNymous24",
     reactions: 277,
+    color: "bg-red-500",
+    colorForC: "#ef4444",
+    completed: 80,
+    numberForC: 28.3,
+    comments:
+      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium",
     img: company,
     feedback: [
       {
@@ -41,6 +47,12 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "Clemoufle",
     reactions: 277,
+    color: "bg-blue-500",
+    colorForC: "#3b82f6",
+    numberForC: 6.8,
+    completed: 43,
+    comments:
+      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium",
     img: computer,
     feedback: [
       {
@@ -72,6 +84,12 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "Terry",
     reactions: 277,
+    color: "bg-orange-500",
+    colorForC: "#f97316",
+    numberForC: 28.7,
+    completed: 28,
+    comments:
+      "Dude... Windows 98 is just the best it rocks what's your problem!?",
     img: rh,
     feedback: [
       {
@@ -103,6 +121,12 @@ const dashboardData = [
     date: "22/06/1990 8h36",
     Poster: "Kevin",
     reactions: 277,
+    color: "bg-green-500",
+    colorForC: "#22c55e",
+    numberForC: 36.3,
+    completed: 57,
+    comments:
+      "Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium Lorem ipsum baby kevin lorem latum kanabis torem troudbal project di merdium",
     img: pq,
     feedback: [
       {
