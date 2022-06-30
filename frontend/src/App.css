@@ -17,11 +17,11 @@ body {
   --title-size: 72px;
   --text-font: "Hind", sans-serif;
   --text-size: 16px;
-  --text-color: #3e3d3d;
-  --color1: #ffc09f;
-  --color2: #79addc;
-  --color3: #ffee93;
-  --background: #ffffff;
+  --text-color: white;
+  --color1: #161a1d;
+  --color2: #a4161a;
+  --color3: #b1a7a6;
+  --background: white;
 }
 
 h1,
@@ -30,6 +30,7 @@ h3,
 h4,
 h5 {
   font-family: var(--title-font);
+  color: white;
 }
 
 p {
@@ -41,6 +42,7 @@ li,
 a {
   list-style-type: none;
   text-decoration: none;
+  color: white;
 }
 a:hover {
   color: inherit;
@@ -49,28 +51,20 @@ a:hover {
 
 .left {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
   width: 40%;
   height: 100vh;
-  background-color: var(--color1);
+  background-color: var(--color2);
 }
 
-.quote-wrapper {
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
 .quote {
   color: var(--background);
   margin: auto;
   width: 80%;
+  text-align: center;
   display: flex;
   justify-content: center;
-  font-size: 71px;
+  font-size: 64px;
   align-items: center;
 }
 .logo {
@@ -81,9 +75,11 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 60%;
-  background-image: url("./assets/map2.png");
+  background-color: var(--background);
+  background-image: url("./assets/whisperer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
 }
 
 .login-wrapper {
@@ -92,7 +88,10 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color3);
+  background-color: #161a1d;
+}
+.login-wrapper h1 {
+  color: var();
 }
 
 .login-wrapper input {
@@ -101,7 +100,6 @@ a:hover {
 
 .loginbtn {
   padding: 0.5rem 3rem;
-  color: var(--background);
   font-weight: bold;
   background-color: var(--color2);
 }
@@ -113,7 +111,6 @@ a:hover {
 .hi {
   font-family: var(--title-font);
   font-size: 48px;
-  color: #79addc;
 }
 .signup {
   font-weight: bold;
@@ -145,22 +142,21 @@ a:hover {
   background-color: var(--color2);
 }
 
-
 .topics:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: all 0.7s ease-in-out;
 }
-.tucasselescouileecssdemerde{
+.tucasselescouileecssdemerde {
   position: fixed;
-  left:0; 
+  left: 0;
 }
 
 /* Feedbacks */
 
-.feedback_container{
+.feedback_container {
   height: 100vh;
-  background-color:var(--color3);
+  background-color: var(--color3);
 }
 .feedback_container h2 {
   color: var(--color2);
@@ -199,7 +195,7 @@ a:hover {
   position: relative;
 }
 
-.feedback_input_container input { 
+.feedback_input_container input {
   width: 100%;
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
@@ -222,6 +218,3 @@ a:hover {
   justify-content: flex-end;
   align-items: center;
 }
-
-
-

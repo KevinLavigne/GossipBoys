@@ -5,7 +5,7 @@ function LogIn() {
   return (
     <div className="right">
       <div className="login-wrapper rounded-lg shadow-2xl">
-        <h1 className="hi pt-5 pb-5 ps-5 pe-5 ms-5 me-5">Hi, Apsiders</h1>
+        <h1 className="hi pt-5 pb-5 ps-5 pe-5 ms-5 me-5">Hi, Bitchers</h1>
         <input
           type="text"
           className="w-50 h-10 p-2 m-3 bg-white border-2 justify-evenly"
@@ -16,11 +16,11 @@ function LogIn() {
           className="w-50 h-10 p-2 m-3 bg-white border-2  justify-evenly"
           placeholder="Your Password"
         />
-        <button className="loginbtn rounded-full mb-5 mt-3">
-          <NavLink to="/Page1">Log In</NavLink>
+        <button className="loginbtn rounded-full mb-5 mt-10">
+          <NavLink to="/Page1">Bitch In</NavLink>
         </button>
-        <p className="mb-5 mt-3 ps-3 pe-3">
-          You dont have an account ? Register by clicking here{" "}
+        <p className="mb-10 mt-10 pl-3 pr-3 text-white">
+          You dont have an account ? Get close from your company{" "}
           <NavLink className="signup" to="/SignUp">
             Sign Up
           </NavLink>
