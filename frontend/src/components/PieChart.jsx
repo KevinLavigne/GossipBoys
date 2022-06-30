@@ -94,6 +94,8 @@ function PieChartComponent() {
             padding: "2%",
             borderRadius: "10%",
           }}
+          animate={true}
+          animationDuration={1000}
         />
       </div>
     </div>
