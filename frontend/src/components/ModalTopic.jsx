@@ -15,10 +15,12 @@ function ModalTopic() {
   } = useForm();
   const onSubmit = (data) => console.warn(data);
 
-  const [publicR, setPublicR] = useState("Public");
+  const [radioStatus, setradioStatus] = useState("Public");
+  const [email, setEmail] = useState("");
+  const [data, setData] = useState([]);
 
   const handleRadio = (value) => {
-    setPublicR(value);
+    setradioStatus(value);
   };
 
   const contentStyle = {
@@ -45,7 +47,7 @@ function ModalTopic() {
             <button
               type="button"
               onClick={close}
-              className="flex justify-end pr-8 font-medium"
+              className="flex justify-end font-medium"
             >
               <img src={svg} alt="bouton de retour" />
             </button>
@@ -63,16 +65,6 @@ function ModalTopic() {
                 required
               />
             </label>
-
-            <label className="flex flex-col">
-              <h3 className="text-[#3e3d3d]">
-                Add some context to your question
-              </h3>
-              <input
-                className="shadow appearance-none border border-grey-500 rounded w-35 py-2 px-3 text-gray-700 mb-3 mt-3"
-                required
-              />
-            </label>
             <h4 className="mb-4 text-[#3e3d3d]">
               Add a category to your Topic
             </h4>
@@ -83,15 +75,43 @@ function ModalTopic() {
                   <option value="life at work">Life at work</option>
                   <option value="other">Other</option>
                 </select>
-                <h5 className="mb-4 mt-4 text-[#3e3d3d]">Invite Bitchers</h5>
-                <input type="text" placeholder="Add Emails" />
+                {radioStatus === "Private" ? (
+                  <>
+                    <h5 className="mb-4 mt-4 text-[#3e3d3d]">
+                      Invite Bitchers
+                    </h5>
+                    <div className="flex">
+                      <input
+                        type="text"
+                        placeholder="Add Emails"
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                      />
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          setData([...data, email]);
+                          setEmail("");
+                        }}
+                      >
+                        +
+                      </button>
+                    </div>
+                    {data.length > 0 &&
+                      data.map((item) => {
+                        return <p>{item}</p>;
+                      })}
+                  </>
+                ) : (
+                  ""
+                )}
               </div>
               <form>
                 <div className="flex flex-col justify-center gap-4">
                   <label>
                     <input
                       type="radio"
-                      checked={publicR === "Public"}
+                      checked={radioStatus === "Public"}
                       className="mr-1"
                       onChange={() => handleRadio("Public")}
                     />
@@ -100,7 +120,7 @@ function ModalTopic() {
                   <label>
                     <input
                       type="radio"
-                      checked={publicR === "Private"}
+                      checked={radioStatus === "Private"}
                       className="mr-1"
                       onChange={() => handleRadio("Private")}
                     />
