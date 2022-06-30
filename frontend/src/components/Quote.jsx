@@ -1,16 +1,14 @@
 import "../App.css";
-import loginlogo from "../assets/logo-loginbackground.png";
+import Bitchmeplease from "../assets/logo-without-title.png";
 
 function Quote() {
   return (
     <div className="left">
+      <div className="quote">
+        <h1>&quot;The only place where bitching is caring.&quot;</h1>
+      </div>
       <div className="quote-wrapper">
-        <img className="logo" src={loginlogo} alt="" />
-        <div className="quote">
-          <h1>
-            &quot;The best way to predict the future is to create it.&quot;
-          </h1>
-        </div>
+        <img className="logo" src={Bitchmeplease} alt="" />
       </div>
     </div>
   );
