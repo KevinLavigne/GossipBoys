@@ -145,12 +145,6 @@ a:hover {
   background-color: var(--color2);
 }
 
-
-.topics:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: all 0.7s ease-in-out;
-}
 .tucasselescouileecssdemerde{
   position: absolute;
   left:0; 
