@@ -88,7 +88,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #161a1d;
+  background-color: var(--color3);
 }
 .login-wrapper h1 {
   color: var();
@@ -96,6 +96,9 @@ a:hover {
 
 .login-wrapper input {
   color: var(--text-color);
+}
+.text-login-btn{
+  color: var(--text-color)
 }
 
 .loginbtn {
@@ -126,7 +129,7 @@ form p {
 
 /* LOGIN PAGE */
 .navbar {
-  right: 0%;
+  right: 0;
 }
 
 .bglogin {
@@ -226,7 +229,47 @@ form p {
   justify-content: flex-end;
   align-items: center;
 }
+.feedback_parent {
+  position: relative;
+  padding-right: 2rem;
+}
 
+.button_dots {
+  position: absolute;
+  right: 0;
+}
+
+.feedback_dots {
+  width: 1.5rem;
+}
+.hidden {
+  display: none;
+}
+
+.report_container {
+  position: absolute;
+  right: 1rem;
+  z-index: 1;
+  width: 10rem;
+  padding: 0 1rem;
+  background-color: var(--background);
+}
+
+.report {
+  padding: 0 1rem;
+}
+
+.report_button {
+  padding: 0.25rem 0;
+}
+
+.report_container.shadow-md img {
+margin: 0 0 0rem 1rem;
+}
+
+.feedback_main_text {
+  padding-top: 2rem ;
+}
 /*Progess Bar */
 
 .label {
@@ -235,3 +278,17 @@ form p {
 }
 
 /*Progess Bar */
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color2);
+}
+
+.header-wrapper img {
+  width: 10%;
+}
+.dashboard-bg {
+  background-color: var(--color3);
+}

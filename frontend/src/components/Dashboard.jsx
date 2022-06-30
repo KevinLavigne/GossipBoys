@@ -19,8 +19,8 @@ function Dashboard() {
       <h2 className="underline decoration-8 decoration-darkGrey mb-8 mt-8 text-darkRed text-6xl ml-36">
         Dashboard
       </h2>
-      <div className="flex flex-col w-full h-3/4 justify-center items-center">
-        {favorite === false
+      <div className="flex flex-col w-full h-3/4 justify-center items-center pt-8">
+        {favorite === true
           ? bitches
               .filter((data) => data.check === favorite)
               .map((data) => (
