@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import ExportContext from "../contexts/Context";
 import logo from "../assets/logo-title-white.png";
+import logo from "../assets/newlogotitlewhite.png";
 
 function Header({ isDashboard }) {
   const object = [

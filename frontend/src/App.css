@@ -17,7 +17,7 @@ body {
   --title-size: 72px;
   --text-font: "Hind", sans-serif;
   --text-size: 16px;
-  --text-color: white;
+  --text-color: black;
   --color1: #161a1d;
   --color2: #a4161a;
   --color3: #b1a7a6;
@@ -88,7 +88,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #161a1d;
+  background-color: var(--color3);
 }
 .login-wrapper h1 {
   color: var();
@@ -96,6 +96,9 @@ a:hover {
 
 .login-wrapper input {
   color: var(--text-color);
+}
+.text-login-btn{
+  color: var(--text-color)
 }
 
 .loginbtn {
@@ -116,11 +119,19 @@ a:hover {
   font-weight: bold;
   color: green;
 }
+form input {
+  font-weight: bold;
+}
+form p {
+  font-weight: bold;
+  color: #a4161a;
+}
 
 /* LOGIN PAGE */
 .navbar {
   right: 0%;
   bottom: 0%;
+  right: 0;
 }
 
 .bglogin {
@@ -281,6 +292,7 @@ a:hover {
   width: 10%;
 }
 
+
 .shawdow {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -362,3 +374,30 @@ a:hover {
   transition: 1s ease-in-out;
   cursor: pointer;
 }
+=======
+.dashboard-bg {
+  background-color: var(--color3);
+}
+
+/* Disclaimer CSS Start */
+
+.disclaimer-button {
+  font-family: var(--title-font);
+  font-size:x-large;
+}
+
+.disclaimer-text {
+  font-family: var(--title-font);
+  font-size:160px;
+}
+
+.disclaimer-paragraph {
+  font-family: var(--title-font);
+  text-align: center;
+}
+
+.disclaimer-eye {
+  width: 180px;
+}
+
+/* Dislaimer CSS End */
