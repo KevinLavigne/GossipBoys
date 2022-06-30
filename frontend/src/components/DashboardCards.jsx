@@ -11,7 +11,7 @@ function DashboardCards({ data }) {
       className="flex flex-row w-11/12 h-full justify-center mr-8"
       role="link"
       onClick={() => {
-        navigate(`/Page2/${data.id + 1}`);
+        navigate(`/dashboard/${data.id + 1}`);
       }}
     >
       <div className="flex flex-col bglongin3 w-4/5 h-full mb-8">
@@ -34,7 +34,7 @@ function DashboardCards({ data }) {
           <img className="w-8" src={data.img} alt="icone" />
         </div>
       </div>
-      <div className="flex flex-col bglogin w-1/5 h-full mb-8 justify-center items-center mb-4">
+      <div className="flex flex-col bglogin w-1/5 h-full justify-center items-center mb-4">
         <h3 className="mb-4 mt-12">{data.reactions} Reactions</h3>
         <div className="flex flex-row justify-center mb-4">
           <img src={Flamme} alt="Flamme" className="w-16" />

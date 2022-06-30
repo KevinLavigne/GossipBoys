@@ -17,7 +17,7 @@ function LogIn() {
           placeholder="Your Password"
         />
         <button className="loginbtn rounded-full mb-5 mt-3">
-          <NavLink to="/Page1">Log In</NavLink>
+          <NavLink to="/dashboard">Log In</NavLink>
         </button>
         <p className="mb-5 mt-3 ps-3 pe-3">
           You dont have an account ? Register by clicking here{" "}

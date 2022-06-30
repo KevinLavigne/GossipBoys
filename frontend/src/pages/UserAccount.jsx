@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-function Page2() {
+function UserAccount() {
   const [pg2, setPg2] = useState([]);
   console.warn(`${pg2} ${setPg2}`);
-  return <div>Page2</div>;
+  return <div>UserAccount</div>;
 }
-export default Page2;
+export default UserAccount;
