@@ -204,21 +204,26 @@ form p {
 }
 
 .feedback_input_container {
+  width: 60rem;
   margin: 0 15rem;
-  position: relative;
+  position: fixed;
+  bottom: 20px;
 }
 
 .feedback_input_container input {
   width: 100%;
+  height: 5rem;
+  background-color: #f2edec;
+  opacity: 95%;
   padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .feedback_input_container img {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 0.25rem 1rem;
+  padding: 1.6rem 1rem;
 }
 
 .feedback_fit_content {
