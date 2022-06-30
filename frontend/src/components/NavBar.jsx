@@ -15,7 +15,7 @@ function NavBar() {
   const { favorite, handleClickOnFavorite } = useContext(ExportContext.Context);
 
   return (
-    <div className="sticky navbar w-fit py-6 px-6 m-3 h-5/6 shadow-lg">
+    <div className="fixed navbar py-6 px-6 m-3 h-5/6 shadow-lg">
       <ul className="flex flex-col justify-around h-full items-center">
         <ModalTopic />
         <NavLink to="/dashboard">
