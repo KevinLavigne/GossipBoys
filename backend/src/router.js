@@ -1,6 +1,10 @@
 const express = require("express");
 
-const { ItemController, AuthController } = require("./controllers");
+const {
+  ItemController,
+  AuthController,
+  mailerController,
+} = require("./controllers");
 
 const {
   loginValidation,
@@ -18,5 +22,7 @@ router.get("/items/:id", ItemController.read);
 router.put("/items/:id", ItemController.edit);
 router.post("/items", ItemController.add);
 router.delete("/items/:id", ItemController.delete);
+
+router.post("/sendEmail", mailerController.sendMail);
 
 module.exports = router;

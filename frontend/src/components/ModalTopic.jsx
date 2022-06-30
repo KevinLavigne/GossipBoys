@@ -3,6 +3,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import Popup from "reactjs-popup";
 import { set, useForm } from "react-hook-form";
+import axios from "axios";
 import { useState } from "react";
 import svg from "../assets/return_button_2.svg";
 import plus from "../assets/plus.png";
@@ -13,11 +14,39 @@ function ModalTopic() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.warn(data);
+
+  const [mailData, setMailData] = useState({
+    subject: "",
+    category: "company",
+    email: "",
+  });
+
+  const SubmitMail = () => {
+    axios
+      .post(`http://localhost:5000/sendEmail`, mailData)
+      .then((res) => {
+        console.warn(res);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+
+  const sendingMail = () => {
+    SubmitMail();
+  };
+
+  const handleChange = (e) => {
+    setMailData({
+      ...mailData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const [data, setData] = useState([]);
 
   const [radioStatus, setradioStatus] = useState("Public");
   const [email, setEmail] = useState("");
-  const [data, setData] = useState([]);
 
   const handleRadio = (value) => {
     setradioStatus(value);
@@ -55,7 +84,7 @@ function ModalTopic() {
               Let's Gossip
             </h1>
           </div>
-          <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
+          <form onSubmit={handleSubmit(sendingMail)} className="flex flex-col">
             <label className="flex flex-col">
               <h2 className="text-[#3e3d3d]">
                 What Do you want to bitch about today ?
@@ -63,6 +92,9 @@ function ModalTopic() {
               <input
                 className="shadow appearance-none border border-grey-500 rounded w-35 py-2 px-3 text-gray-700 mb-3 mt-3"
                 required
+                name="subject"
+                onChange={(e) => handleChange(e)}
+                value={mailData.subject}
               />
             </label>
             <h4 className="mb-4 text-[#3e3d3d]">
@@ -70,7 +102,12 @@ function ModalTopic() {
             </h4>
             <div className="flex flex-row gap-20">
               <div className="flex flex-col">
-                <select {...register("categorie")} className="w-36">
+                <select
+                  {...register("categorie")}
+                  name="category"
+                  className="w-36"
+                  onChange={(e) => handleChange(e)}
+                >
                   <option value="company">Company</option>
                   <option value="life at work">Life at work</option>
                   <option value="other">Other</option>
@@ -134,6 +171,14 @@ function ModalTopic() {
                 type="submit"
                 value="Start Bitching"
                 className="bg-[#ffc09f] text-[#3e3d3d] text-lg rounded-full w-48 p-3 shadow-lg transition duration-500 ease-out hover:scale-105"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  setMailData({
+                    ...mailData,
+                    email: data,
+                  });
+                  sendingMail;
+                }}
               />
             </div>
           </form>
