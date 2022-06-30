@@ -15,7 +15,7 @@ function NavBar() {
   const { favorite, handleClickOnFavorite } = useContext(ExportContext.Context);
 
   return (
-    <div className="absolute navbar py-6 px-6 m-3 h-5/6 shadow-sm">
+    <div className="absolute navbar py-6 px-6 m-3 h-5/6 shadow-lg">
       <ul className="flex flex-col justify-around h-full items-center">
         <ModalTopic />
         <NavLink to="/dashboard">

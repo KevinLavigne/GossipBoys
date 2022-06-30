@@ -5,7 +5,7 @@ const Context = createContext();
 function Provider({ children }) {
   const [state, setState] = useState([]);
   const [state2, setState2] = useState([]);
-  const [favorite, setFavorite] = useState(true);
+  const [favorite, setFavorite] = useState(false);
 
   const handleClickOnFavorite = () => {
     setFavorite(!favorite);

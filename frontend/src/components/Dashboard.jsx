@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import ExportContext from "../contexts/Context";
 import DashboardCards from "./DashboardCards";
 import dashboardData from "../data/dashboardData";
 
 function Dashboard() {
+  const { favorite } = useContext(ExportContext.Context);
   const [bitches, setBitches] = useState(dashboardData);
 
   const handleCheckStar = (bitch) => {
@@ -18,14 +20,28 @@ function Dashboard() {
         Dashboard
       </h2>
       <div className="flex flex-col w-full h-3/4 justify-center items-center">
-        {bitches.map((data) => (
-          <li
-            className="flex flex-row w-11/12 h-full justify-center mr-8 transition duration-700 ease-out hover:scale-105"
-            key={data.id}
-          >
-            <DashboardCards data={data} handleCheckStar={handleCheckStar} />
-          </li>
-        ))}
+        {favorite === false
+          ? bitches
+              .filter((data) => data.check === favorite)
+              .map((data) => (
+                <li
+                  className="flex flex-row w-11/12 h-full justify-center mr-8 transition duration-700 ease-out hover:scale-105"
+                  key={data.id}
+                >
+                  <DashboardCards
+                    data={data}
+                    handleCheckStar={handleCheckStar}
+                  />
+                </li>
+              ))
+          : bitches.map((data) => (
+              <li
+                className="flex flex-row w-11/12 h-full justify-center mr-8 transition duration-700 ease-out hover:scale-105"
+                key={data.id}
+              >
+                <DashboardCards data={data} handleCheckStar={handleCheckStar} />
+              </li>
+            ))}
       </div>
     </div>
   );
