@@ -88,7 +88,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #161a1d;
+  background-color: var(--color3);
 }
 .login-wrapper h1 {
   color: var();
@@ -96,6 +96,9 @@ a:hover {
 
 .login-wrapper input {
   color: var(--text-color);
+}
+.text-login-btn{
+  color: var(--text-color)
 }
 
 .loginbtn {
@@ -119,7 +122,7 @@ a:hover {
 
 /* LOGIN PAGE */
 .navbar {
-  right: 0%;
+  right: 0;
 }
 
 .bglogin {
@@ -278,4 +281,7 @@ margin: 0 0 0rem 1rem;
 
 .header-wrapper img {
   width: 10%;
+}
+.dashboard-bg {
+  background-color: var(--color3);
 }

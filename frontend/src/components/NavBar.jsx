@@ -15,7 +15,7 @@ function NavBar() {
   const { favorite, handleClickOnFavorite } = useContext(ExportContext.Context);
 
   return (
-    <div className="absolute navbar py-6 px-6 m-3 h-5/6 shadow-lg">
+    <div className="fixed navbar py-6 px-6 m-3 h-5/6 shadow-lg">
       <ul className="flex flex-col justify-around h-full items-center">
         <ModalTopic />
         <NavLink to="/dashboard">
@@ -35,13 +35,13 @@ function NavBar() {
         <button type="button" onClick={() => handleClickOnFavorite()}>
           {favorite && favorite ? (
             <img
-              src={starBlack}
+              src={starYellow}
               alt="etoile"
               className="w-5 transition duration-150 ease-out hover:scale-125"
             />
           ) : (
             <img
-              src={starYellow}
+              src={starBlack}
               alt="etoile"
               className="w-5 transition duration-150 ease-out hover:scale-125"
             />
