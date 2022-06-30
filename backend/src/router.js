@@ -4,6 +4,7 @@ const {
   ItemController,
   AuthController,
   mailerController,
+  TopicsController,
 } = require("./controllers");
 
 const {
@@ -24,5 +25,8 @@ router.post("/items", ItemController.add);
 router.delete("/items/:id", ItemController.delete);
 
 router.post("/sendEmail", mailerController.sendMail);
+
+router.get("/topics", TopicsController.browse);
+router.get("/topics/:id", TopicsController.read);
 
 module.exports = router;

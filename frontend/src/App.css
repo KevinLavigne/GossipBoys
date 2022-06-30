@@ -129,6 +129,8 @@ form p {
 
 /* LOGIN PAGE */
 .navbar {
+  right: 0%;
+  bottom: 0%;
   right: 0;
 }
 
@@ -264,11 +266,11 @@ form p {
 }
 
 .report_container.shadow-md img {
-margin: 0 0 0rem 1rem;
+  margin: 0 0 0rem 1rem;
 }
 
 .feedback_main_text {
-  padding-top: 2rem ;
+  padding-top: 2rem;
 }
 /*Progess Bar */
 
@@ -289,6 +291,90 @@ margin: 0 0 0rem 1rem;
 .header-wrapper img {
   width: 10%;
 }
+
+
+.shawdow {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.test {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  margin: 0;
+}
+
+.piecharth2 {
+  justify-content: center;
+  align-items: center;
+  color: var(--color1);
+  font-size: 24px;
+  display: flex;
+  height: 50%;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.topic-wrapper {
+  margin: 1rem auto;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+  font-family: var(--title-font);
+  background-color: var(--color1);
+}
+
+.topic-title {
+  font-size: 32px;
+  color: var(--color2);
+}
+
+.analysis-wrapper {
+  background-image: url("./assets/wave01.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  margin-right: 10px;
+  width: 80px;
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-items {
+  width: 100px;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar img {
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkDashboardCard {
+  cursor: pointer;
+}
+
+.topic-cards:hover {
+  transform: scale(1.02);
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+=======
 .dashboard-bg {
   background-color: var(--color3);
 }
