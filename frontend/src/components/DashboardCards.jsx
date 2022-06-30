@@ -11,7 +11,7 @@ function DashboardCards({ data }) {
       className="flex flex-row w-11/12 h-full justify-center mr-8"
       role="link"
       onClick={() => {
-        navigate(`/dashboard/${data.id + 1}`);
+        navigate(`/dashboard/${data.id}`);
       }}
     >
       <div className="flex flex-col bglongin3 w-4/5 h-full mb-8">

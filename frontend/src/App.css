@@ -145,22 +145,21 @@ a:hover {
   background-color: var(--color2);
 }
 
-
 .topics:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: all 0.7s ease-in-out;
 }
-.tucasselescouileecssdemerde{
+.tucasselescouileecssdemerde {
   position: absolute;
-  left:0; 
+  left: 0;
 }
 
 /* Feedbacks */
 
-.feedback_container{
+.feedback_container {
   height: 100vh;
-  background-color:var(--color3);
+  background-color: var(--color3);
 }
 .feedback_container h2 {
   color: var(--color2);
@@ -199,7 +198,7 @@ a:hover {
   position: relative;
 }
 
-.feedback_input_container input { 
+.feedback_input_container input {
   width: 100%;
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
@@ -222,6 +221,32 @@ a:hover {
   justify-content: flex-end;
   align-items: center;
 }
+.feedback_parent {
+  position: relative;
+  padding-right: 2rem;
+}
 
+.button_dots {
+  position: absolute;
+  right: 0;
+}
 
+.feedback_dots {
+  width: 1.5rem;
+}
 
+.hidden {
+  display: none;
+}
+
+.report_container {
+  position: absolute;
+  right: 1rem;
+  z-index: 1;
+  width: 10rem;
+  background-color: var(--background);
+}
+
+.report {
+  padding: 0 1rem;
+}
