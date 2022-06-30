@@ -22,6 +22,8 @@ body {
   --color2: #a4161a;
   --color3: #b1a7a6;
   --background: white;
+
+ 
 }
 
 h1,
@@ -142,6 +144,7 @@ a:hover {
   background-color: var(--color2);
 }
 
+
 .topics:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -150,6 +153,10 @@ a:hover {
 .tucasselescouileecssdemerde {
   position: fixed;
   left: 0;
+
+.tucasselescouileecssdemerde{
+  position: absolute;
+  left:0;
 }
 
 /* Feedbacks */
@@ -218,3 +225,15 @@ a:hover {
   justify-content: flex-end;
   align-items: center;
 }
+
+
+/*Progess Bar */
+
+.label {
+  font-size: 20px;
+  color: white;
+}
+
+/*Progess Bar */
+
+

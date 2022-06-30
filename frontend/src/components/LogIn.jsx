@@ -1,7 +1,41 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/void-dom-elements-no-children */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+
 import "../App.css";
-import { HashLink as NavLink } from "react-router-hash-link";
+// import { HashLink as NavLink } from "react-router-hash-link";
+import * as yup from "yup";
+import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+const schema = yup.object({
+  email: yup
+    .string()
+    .email()
+    .required(" you wont be able to gossip without providing your email"),
+  password: yup
+    .string()
+    .min(8)
+    .required("We need your password to start gossiping !"),
+});
 
 function LogIn() {
+  const navigate = useNavigate();
+  const {
+    handleSubmit,
+    register,
+
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+    mode: "onChange",
+  });
+
+  const onSubmit = (data) => {
+    // eslint-disable-next-line no-restricted-syntax
+    console.log(data);
+  };
   return (
     <div className="right">
       <div className="login-wrapper rounded-lg shadow-2xl">
@@ -25,6 +59,7 @@ function LogIn() {
             Sign Up
           </NavLink>
         </p>
+
       </div>
     </div>
   );

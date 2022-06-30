@@ -1,44 +1,33 @@
 import "../App.css";
 import { useNavigate } from "react-router-dom";
-import Flamme from "../assets/Flamme.png";
 import etoile from "../assets/etoile.png";
 
-function DashboardCards({ data }) {
+function DashboardCards({ data, handleCheckStar }) {
   const navigate = useNavigate();
 
   return (
-    <div
-      className="flex flex-row w-11/12 h-full justify-center mr-8"
-      role="link"
-      onClick={() => {
-        navigate(`/Page2/${data.id + 1}`);
-      }}
-    >
-      <div className="flex flex-col bglongin3 w-4/5 h-full mb-8">
-        <div className=" flex flex-start">
-          <h3>{data.title}</h3>
+    <div className="flex flex-row w-11/12 h-full justify-center mr-8">
+      <div className="flex justify-between bg-white text-darkGrey w-11/12 mb-8 shadow-lg ">
+        <div
+          className=" flex flex-start"
+          role="link"
+          onClick={() => {
+            navigate(`/dashboard/${data.id + 1}`);
+          }}
+        >
+          <h3 className="p-3">{data.title}</h3>
+          <img className="h-8" src={data.img} alt="icone" />
         </div>
-        <div className="flex flex-col dashboard-card-body justify-center items-center p-4">
-          <div className="dashboard-card-body-item">
-            <div className="dashboard-card-body-item-header mb-4 text-gray-500">
-              <h4>Last Feedbacks: {data.date}</h4>
-            </div>
+        <div className="flex flex-col">
+          <div className="flex justify-end pb-14 m-3">
+            <h3 className="flex items-center">{data.reactions} Reactions</h3>
+            <button type="button" onClick={() => handleCheckStar(data)}>
+              <img src={etoile} alt="Etoile" className="w-7 ml-14" />
+            </button>
           </div>
-          <div className="dashboard-card-body-item">
-            <div className="dashboard-card-body-item-header text-gray-500">
-              <h4>Posted By : {data.Poster}</h4>
-            </div>
+          <div className="m-4 text-darkGrey text-xs">
+            <h4>Last Feedbacks: {data.date}</h4>
           </div>
-        </div>
-        <div className=" flex flex-start w-8 m-2">
-          <img className="w-8" src={data.img} alt="icone" />
-        </div>
-      </div>
-      <div className="flex flex-col bglogin w-1/5 h-full mb-8 justify-center items-center mb-4">
-        <h3 className="mb-4 mt-12">{data.reactions} Reactions</h3>
-        <div className="flex flex-row justify-center mb-4">
-          <img src={Flamme} alt="Flamme" className="w-16" />
-          <img src={etoile} alt="Etoile" className="w-16" />
         </div>
       </div>
     </div>
