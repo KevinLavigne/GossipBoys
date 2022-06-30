@@ -14,9 +14,13 @@ function Feedback() {
     <div>
       <Header />
       <NavBar />
-      <div className="feedback_container">
-        <h2> Bitching Area </h2>
+      <div className="flex flex-col bg-wight ml-28 mb-8 mt-8">
+        <h2 className="text-darkRed underline underline-offset-8 text-6xl decoration-8 decoration-darkGrey ">
+          Bitching Area
+        </h2>
+      </div>
 
+      <div className="feedback_container">
         <div className="feedback_flex_btwn feedback_container_question">
           <h3>{dashboardData[id].title}</h3>
           <p>

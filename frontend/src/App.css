@@ -97,8 +97,8 @@ a:hover {
 .login-wrapper input {
   color: var(--text-color);
 }
-.text-login-btn{
-  color: var(--text-color)
+.text-login-btn {
+  color: var(--text-color);
 }
 
 .loginbtn {
@@ -166,15 +166,17 @@ form p {
 /* Feedbacks */
 
 .feedback_container {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: var(--color3);
 }
-.feedback_container h2 {
+/* .feedback_container h2 {
   color: var(--color2);
   font-size: 3rem;
   background-color: var(--background);
   padding: 1rem;
-}
+} */
 
 .feedback_flex_btwn {
   display: flex;
@@ -264,11 +266,11 @@ form p {
 }
 
 .report_container.shadow-md img {
-margin: 0 0 0rem 1rem;
+  margin: 0 0 0rem 1rem;
 }
 
 .feedback_main_text {
-  padding-top: 2rem ;
+  padding-top: 2rem;
 }
 /*Progess Bar */
 
