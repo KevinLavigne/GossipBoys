@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import ExportContext from "../contexts/Context";
 import logo from "../assets/newlogotitlewhite.png";
 
@@ -19,7 +20,9 @@ function Header({ isDashboard }) {
   return (
     <div className="header-wrapper">
       <div className="flex flex-wrap items-center justify-between ">
-        <img src={logo} alt="logo" />
+        <Link to="/dashboard">
+          <img src={logo} alt="logo" />
+        </Link>
         {isDashboard ? (
           <input
             className="mr-16 mb-6 bg-gray-50 shadow border border-gray-300 text-gray-900 rounded block w-30 p-2"
