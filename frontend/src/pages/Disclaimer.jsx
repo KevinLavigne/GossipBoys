@@ -3,12 +3,15 @@ import Eye from "../assets/eye-disclaimer.png";
 
 function Disclaimer() {
   return (
-    <div className="h-screen bg-darkRed flex flex-col justify-center items-center">
-      <div className="w-5/6">
-        <h1 className="disclaimer-text flex justify-center text-white">
+    <div
+      className="bg-darkRed flex flex-col justify-around items-center"
+      id="disclaimer"
+    >
+      <div className=" flex  flex-col w-5/6 h-full ">
+        <h1 className="disclaimer-text flex justify-center text-white font text-5xl mb-10 pb-10 mt-10">
           Warning !
         </h1>
-        <div className="text-white flex justify-center disclaimer-paragraph items-center text-5xl p-52">
+        <div className="text-white text-center flex justify-center disclaimer-paragraph items-center text-5xl m-auto pb-10 w-1/2">
           The following website contains material that may be harmful or
           traumatizing to some audiences
         </div>
