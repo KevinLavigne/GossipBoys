@@ -438,8 +438,10 @@ form p {
 .bitchboard-wrapper {
   background-image: url(./assets/wave2.svg);
   background-repeat: no-repeat;
-
+  height: 99vh;
   background-size: cover;
+}
+#bitchboardcards {
 }
 .reactions {
   display: flex;
