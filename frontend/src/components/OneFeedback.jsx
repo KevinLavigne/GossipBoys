@@ -44,8 +44,9 @@ function OneFeedback({ el }) {
         </div>
       </div>
       <p className="feedback_main_text">{el.text}</p>
-      <div className="flex justify-end">
+      <div className="flex justify-end" id="like-container">
         <button
+          id="btnplus"
           className={
             agree ? "feedback_fit_content font-bold	" : "feedback_fit_content"
           }
@@ -55,6 +56,7 @@ function OneFeedback({ el }) {
           {agree ? el.plus + 1 : el.plus}
         </button>
         <button
+          id="btnmoins"
           className={
             disagree ? "feedback_fit_content font-bold" : "feedback_fit_content"
           }

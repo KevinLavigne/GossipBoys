@@ -44,7 +44,7 @@ function Feedback() {
     <div>
       <Header isDashboard={true} />
       <NavBar />
-      <div className=" topic-wrapper w-11/12 display-flex   shadow-xl rounded-full">
+      <div className=" topic-wrapper w-11/12 display-flex   shadow-xl rounded-lg">
         <div className="topic-title">Place to bitch :</div>
         <div> {dashboardData[id].title}</div>
         <div>Created on :{dashboardData[id].date}</div>{" "}
