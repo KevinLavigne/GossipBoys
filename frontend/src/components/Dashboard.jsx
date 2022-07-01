@@ -16,11 +16,9 @@ function Dashboard() {
     setBitches(newBitches);
   };
   return (
-
     <div className="bitchboard-wrapper">
       <h2 className="underline underline-offset-8 decoration-8 decoration-darkGrey mb-8 pt-2 text-darkRed text-6xl ml-36">
         Bitch Board
-
       </h2>
       <div className="flex flex-col w-full h-3/4 justify-center items-center pt-8">
         {favorite === true

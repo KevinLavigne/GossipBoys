@@ -139,6 +139,7 @@ form p {
 }
 
 .feedback_data_container {
+  cursor: pointer;
   margin-top: 2rem;
   font-weight: bold;
   font-family: var(--text-font);
@@ -168,6 +169,12 @@ form p {
 #btnmoins:hover {
   transform: scale(1.4);
   color: var(--color2);
+}
+#filter-wrapper input,
+#filter-wrapper select,
+#filter-wrapper option {
+  font-weight: bold;
+  font-family: var(--color1);
 }
 
 /* LOGIN PAGE */
