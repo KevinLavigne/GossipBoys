@@ -1,12 +1,11 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-props-no-spreading */
 import Popup from "reactjs-popup";
-import { set, useForm } from "react-hook-form";
 import axios from "axios";
-import { useState } from "react";
-
+import { set, useForm } from "react-hook-form";
+import { useState, useEffect } from "react";
+import svg from "../assets/return_button_2.svg";
 import plus from "../assets/plus.png";
+
+import ExportContext from "../contexts/Context";
 
 function ModalTopic() {
   const {
@@ -14,6 +13,8 @@ function ModalTopic() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const date = new Date().toLocaleDateString("fr");
 
   const [mailData, setMailData] = useState({
     subject: "",
@@ -24,6 +25,23 @@ function ModalTopic() {
   const SubmitMail = () => {
     axios
       .post(`http://localhost:5000/sendEmail`, mailData)
+      .then((res) => {
+        console.warn(res);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+
+  const handlePost = () => {
+    axios
+      .post("http://localhost:5000/sendTopics", {
+        title: mailData.subject,
+        date: date,
+        users_id: 1,
+        category: mailData.category,
+        reaction: 0,
+      })
       .then((res) => {
         console.warn(res);
       })
@@ -50,6 +68,14 @@ function ModalTopic() {
 
   const handleRadio = (value) => {
     setradioStatus(value);
+  };
+  const multipleHandle = () => {
+    setMailData({
+      ...mailData,
+      email: data,
+    });
+    SubmitMail();
+    handlePost();
   };
 
   const contentStyle = {
@@ -84,7 +110,10 @@ function ModalTopic() {
             </button>
             <h1 className="flex text-7xl text-darkGrey mb-12">Let's Gossip</h1>
           </div>
-          <form onSubmit={handleSubmit(sendingMail)} className="flex flex-col">
+          <form
+            onSubmit={handleSubmit(multipleHandle)}
+            className="flex flex-col"
+          >
             <label className="flex flex-col">
               <h2 className="text-[#3e3d3d]">
                 What do you want to bitch about today ?
@@ -106,6 +135,7 @@ function ModalTopic() {
                   className="w-36"
                   onChange={(e) => handleChange(e)}
                 >
+                  <option value="company">Company</option>
                   <option value="human ressources">Human Ressources</option>
                   <option value="product owner">Product Owner</option>
                   <option value="accessibility">Accessibility</option>
