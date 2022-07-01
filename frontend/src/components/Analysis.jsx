@@ -8,15 +8,15 @@ function Analysis() {
     <div className="analysis-wrapper w-full h-full">
       <div className=" topic-wrapper w-11/12 display-flex   shadow-xl rounded-full">
         <div className="topic-title">Bitching Analysis :</div>
-        <div> We had some delay on the delivery of the projet EDC, why ? </div>
-        <div>Created on : 22/06/1990</div> <div> By: Clemoufle</div>
+        <div> What's wrong with the new product feature ? </div>
+        <div>Created on : 01/07/2022 8h36</div> <div> By: ArkaneDev</div>
       </div>
       <div className="flex flex-row>">
         <div className="flex flex-col w-full">
           <PieChartComponent />
         </div>
         <div className="flex flex-col w-full ">
-          {dashboardData.map((data) => (
+          {dashboardData[1].feedback.map((data) => (
             <AnalysisCards data={data} key={data.id} />
           ))}
         </div>

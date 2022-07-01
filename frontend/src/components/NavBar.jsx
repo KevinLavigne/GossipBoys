@@ -29,6 +29,9 @@ function NavBar() {
           />
         </NavLink>
         <NavLink to="/Page3">
+          <span className="flex h-3 w-3">
+            <span className="animate-ping inline-flex h-full w-3 rounded-full bg-cyan-500 opacity-75" />
+          </span>
           <img
             src={cloche}
             alt="notification"

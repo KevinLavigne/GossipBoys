@@ -13,7 +13,7 @@ function DashboardCards({ data, handleCheckStar }) {
           className=" flex flex-start linkDashboardCard"
           role="link"
           onClick={() => {
-            navigate(`/dashboard/${data.id + 1}`);
+            navigate(`/dashboard/${data.id}`);
           }}
         >
           <h3 className="p-3 text-darkGrey">{data.title}</h3>

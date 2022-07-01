@@ -5,7 +5,14 @@ import logo from "../assets/newlogotitlewhite.png";
 function Header({ isDashboard }) {
   const object = [
     { value: "", display: "Find by theme" },
-    { value: "PQ", display: "Problème de papier toilette" },
+    { value: "human ressources", display: "Human Ressources" },
+    { value: "product owner", display: "Product Owner" },
+    { value: "accessibility", display: "Accessibility" },
+    { value: "report", display: "Report" },
+    { value: "well being", display: "Well Being" },
+    { value: "Sales", display: "Sales" },
+    { value: "life at work", display: "Life at Work" },
+    { value: "other", display: "Other" },
   ];
   const { handleChangeCatégoryFilter, handleChangeNameFilter, nameFilter } =
     useContext(ExportContext.Context);

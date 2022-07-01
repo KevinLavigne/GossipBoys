@@ -5,10 +5,8 @@ import Popup from "reactjs-popup";
 import { set, useForm } from "react-hook-form";
 import axios from "axios";
 import { useState } from "react";
-import svg from "../assets/return_button_2.svg";
-import plus from "../assets/plus.png";
 
-import ExportContext from "../contexts/Context";
+import plus from "../assets/plus.png";
 
 function ModalTopic() {
   const {
@@ -108,7 +106,12 @@ function ModalTopic() {
                   className="w-36"
                   onChange={(e) => handleChange(e)}
                 >
-                  <option value="company">Company</option>
+                  <option value="human ressources">Human Ressources</option>
+                  <option value="product owner">Product Owner</option>
+                  <option value="accessibility">Accessibility</option>
+                  <option value="report">Report</option>
+                  <option value="well being">Well Being</option>
+                  <option value="Sales">Sales</option>
                   <option value="life at work">Life at work</option>
                   <option value="other">Other</option>
                 </select>
