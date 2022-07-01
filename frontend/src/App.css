@@ -88,14 +88,15 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color3);
+  background-color: var(--color1);
 }
 .login-wrapper h1 {
   color: var();
 }
 
 .login-wrapper input {
-  color: var(--text-color);
+  color: var(--color1);
+  font-weight: bold;
 }
 .text-login-btn {
   color: var(--text-color);
@@ -119,12 +120,54 @@ a:hover {
   font-weight: bold;
   color: green;
 }
+
 form input {
   font-weight: bold;
 }
 form p {
   font-weight: bold;
   color: #a4161a;
+}
+#notifications {
+  background-image: url("./assets/wave3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#notifications:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 1s;
+}
+
+.feedback_data_container {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-family: var(--text-font);
+}
+.feedback_flex_btwn {
+  padding-bottom: 2px;
+  color: var(--color2);
+  border-bottom: 2px solid var(--color3);
+}
+
+.feedback_fit_content {
+  font-weight: bold;
+}
+
+.feedback_main_text {
+  font-weight: bold;
+  font-family: var(--text-font);
+  /*text-align: center;*/
+}
+#like-container:first-child {
+  color: red;
+}
+#btnplus:hover {
+  transform: scale(1.4);
+  color: green;
+}
+#btnmoins:hover {
+  transform: scale(1.4);
+  color: var(--color2);
 }
 
 /* LOGIN PAGE */
@@ -383,6 +426,24 @@ form p {
 
 .dashboard-bg {
   background-color: var(--color3);
+}
+
+.bitchboard-wrapper {
+  background-image: url(./assets/wave2.svg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+.reactions {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-top: 2px;
+  color: var(--color1);
+}
+
+.reactions:hover {
+  color: #a4161a;
 }
 
 /* Disclaimer CSS Start */
