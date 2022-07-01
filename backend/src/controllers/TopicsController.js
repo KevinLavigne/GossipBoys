@@ -15,7 +15,7 @@ class TopicsController {
 
   static read = (req, res) => {
     models.topics
-      .find(req.params.id)
+      .getTopicsByUserId(req.params.usersId)
       .then(([rows]) => {
         if (rows[0] == null) {
           res.sendStatus(404);
