@@ -20,13 +20,13 @@ function Feedback() {
         </h2>
       </div>
 
+      <div className=" topic-wrapper w-11/12 display-flex   shadow-xl rounded-full">
+        <div className="topic-title">Bitching Analysis :</div>
+        <div> {dashboardData[id].title}</div>
+        <div>Created on :{dashboardData[id].date}</div>{" "}
+        <div> By: {dashboardData[id].Poster}</div>
+      </div>
       <div className="feedback_container">
-        <div className="feedback_flex_btwn feedback_container_question">
-          <h3>{dashboardData[id].title}</h3>
-          <p>
-            Created on: {dashboardData[id].date} by {dashboardData[id].Poster}
-          </p>
-        </div>
         <div className="feedback_datas_container">
           {dashboardData[id].feedback.map((el) => (
             <OneFeedback el={el} />
