@@ -6,9 +6,9 @@ import logo from "../assets/newlogotitlewhite.png";
 function Header({ isDashboard }) {
   const object = [
     { value: "", display: "Find by theme" },
-    { value: "human ressources", display: "Human Ressources" },
-    { value: "product owner", display: "Product Owner" },
-    { value: "accessibility", display: "Accessibility" },
+    { value: "Human Ressources", display: "Human Ressources" },
+    { value: "Product Owner", display: "Product Owner" },
+    { value: "Accessibility", display: "Accessibility" },
     { value: "report", display: "Report" },
     { value: "well being", display: "Well Being" },
     { value: "Sales", display: "Sales" },
@@ -35,7 +35,7 @@ function Header({ isDashboard }) {
         )}
         {isDashboard ? (
           <select
-            onSelect={(e) => handleChangeCatégoryFilter(e.target.value)}
+            onChange={(e) => handleChangeCatégoryFilter(e.target.value)}
             className="mr-16 mb-6 bg-gray-50 shadow border border-gray-300 text-gray-900 rounded block w-30 p-2.5"
           >
             {object.map((item) => {
