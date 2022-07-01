@@ -1,7 +1,7 @@
 import company from "../assets/company.png";
 import computer from "../assets/computer.png";
 import rh from "../assets/rh.png";
-import pq from "../assets/pq.png";
+import report from "../assets/report-logo.svg";
 
 const dashboardData = [
   {
@@ -173,7 +173,7 @@ const dashboardData = [
     completed: 57,
     check: false,
     comments: "Burnout is coming, please complain",
-    img: pq,
+    img: report,
     feedback: [
       {
         name: "SkySkill",
@@ -211,7 +211,7 @@ const dashboardData = [
     completed: 57,
     check: false,
     comments: "Bitch about sexual arrasment in the company",
-    img: pq,
+    img: report,
     feedback: [
       {
         name: "SelMarin7fgr4552",
@@ -251,7 +251,7 @@ const dashboardData = [
     check: false,
     comments:
       "You decided not to collaborate with us, please bitch us so that we can improve in the future",
-    img: pq,
+    img: company,
     feedback: [
       {
         name: "noPseudo82146",
