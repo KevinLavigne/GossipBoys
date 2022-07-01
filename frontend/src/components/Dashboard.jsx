@@ -4,7 +4,9 @@ import DashboardCards from "./DashboardCards";
 import dashboardData from "../data/dashboardData";
 
 function Dashboard() {
-  const { favorite, nameFilter } = useContext(ExportContext.Context);
+  const { favorite, nameFilter, categoryFilter } = useContext(
+    ExportContext.Context
+  );
   const [bitches, setBitches] = useState(dashboardData);
 
   const handleCheckStar = (bitch) => {
@@ -13,7 +15,6 @@ function Dashboard() {
     newBitches[index].check = !newBitches[index].check;
     setBitches(newBitches);
   };
-
   return (
     <div>
       <h2 className="underline underline-offset-8 decoration-8 decoration-darkGrey mb-8 mt-8 text-darkRed text-6xl ml-36">
@@ -22,7 +23,12 @@ function Dashboard() {
       <div className="flex flex-col w-full h-3/4 justify-center items-center pt-8">
         {favorite === true
           ? bitches
-              .filter((data) => data.check === favorite || "")
+              .filter(
+                (data) =>
+                  data.check === favorite &&
+                  data.title.includes(nameFilter) &&
+                  (categoryFilter === "" || data.category === categoryFilter)
+              )
               .map((data) => (
                 <li
                   className="flex flex-row w-11/12 h-full justify-center mr-8 delay-150 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105"
@@ -35,7 +41,11 @@ function Dashboard() {
                 </li>
               ))
           : bitches
-              .filter((data) => data.title.includes(nameFilter))
+              .filter(
+                (data) =>
+                  data.title.includes(nameFilter) &&
+                  (categoryFilter === "" || data.category === categoryFilter)
+              )
               .map((data) => (
                 <li
                   className="flex flex-row w-11/12 h-full justify-center mr-8 delay-150 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105"
