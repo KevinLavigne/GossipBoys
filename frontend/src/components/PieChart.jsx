@@ -25,7 +25,7 @@ function PieChartComponent() {
     },
     {
       key: 3,
-      title: `${dashboardData[2].numberForC}% of Alex Like it my Bitchers !`,
+      title: `${dashboardData[3].numberForC}% of Alex Like it my Bitchers !`,
       value: 10,
       color: `${dashboardData[3].color}`,
     },
@@ -33,23 +33,30 @@ function PieChartComponent() {
 
   return (
     <div className="flex flex-col w-full h-full mt-8 justify-center items-center">
-      <div className="flex flex-row justify-end justify-items-end justify-self-end object-right w-full h-full">
-        {index > -1
-          ? square
-              .filter((data) => data.key === index)
-              .map((data) => (
-                <div className="flex flex-row justify-end justify-items-end justify-self-end object-right w-1/4 h-full shadow-lg mr-44">
-                  <div
-                    className={`${data.color} boder rounded w-2/6 h-2/5 mt-6 ml-8 mb-8 justify-self-end rounded`}
-                  />
-                  <h2 className="h-16 text-2xl mt-6 ml-8 mb-8 justify-self-end">
-                    {data.title}
-                  </h2>
-                </div>
-              ))
-          : null}
+      <div className="flex flex-row items-center justify-center object-right w-full h-full">
+        {index > -1 ? (
+          square
+            .filter((data) => data.key === index)
+            .map((data) => (
+              <div className="test drop-shadow-2xl border-slate-800 rounded-lg h-25 mr-64 flex flex-wrap relative">
+                <div
+                  className={`${data.color}   w-11/12 m-auto mt-5 h-10 rounded `}
+                />
+                <h2 className="piecharth2">{data.title}</h2>
+              </div>
+            ))
+        ) : (
+          <div className="rounded-lg h-25 mr-64 flex flex-wrap relative">
+            <div className="w-11/12 m-auto mt-5 h-16 rounded" />
+            <h2 className="text-white">
+              Waiting for the user click on the chesse dude !!!!!!!!§§§§§§§§§§
+              Beurk Beurk Beurk Waiting for the user click on the chesse dude
+              !!!!!!!!§§§§§§§§§§ Beurk Beurk Beurk
+            </h2>
+          </div>
+        )}
       </div>
-      <div className="flex flex-col w-full h-full">
+      <div className=" flex flex-wrap w-full h-full sticky justify-center items-center">
         <PieChart
           data={[
             {
@@ -93,6 +100,9 @@ function PieChartComponent() {
             margin: "2%",
             padding: "2%",
             borderRadius: "10%",
+            cursor: "pointer",
+            boxShadow:
+              "rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;",
           }}
           animate={true}
           animationDuration={1000}

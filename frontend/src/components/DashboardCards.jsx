@@ -10,7 +10,7 @@ function DashboardCards({ data, handleCheckStar }) {
     <div className="flex flex-row w-11/12 h-full justify-center mr-8">
       <div className="flex justify-between bg-white text-darkGrey w-11/12 mb-8 shadow-lg ">
         <div
-          className=" flex flex-start"
+          className=" flex flex-start linkDashboardCard"
           role="link"
           onClick={() => {
             navigate(`/dashboard/${data.id + 1}`);
@@ -21,14 +21,14 @@ function DashboardCards({ data, handleCheckStar }) {
         </div>
         <div className="flex flex-col">
           <div className="flex justify-end pb-14 m-3">
-            <h3 className="flex items-center text-darkGrey">
+            <h3 className="flex items-center mr-14 text-darkGrey">
               {data.reactions} Reactions
             </h3>
             <button type="button" onClick={() => handleCheckStar(data)}>
               {data.check ? (
-                <img src={starYellow} alt="Etoile" className="w-7 ml-14" />
+                <img src={starYellow} alt="Etoile" className="w-7" />
               ) : (
-                <img src={starBlack} alt="Etoile" className="w-7 ml-14" />
+                <img src={starBlack} alt="Etoile" className="w-7" />
               )}
             </button>
           </div>
