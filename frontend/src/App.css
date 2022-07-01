@@ -184,7 +184,7 @@ form p {
 }
 
 .feedback_container_question {
-  background-color: var(--color1);
+  background-color: var(--color2);
   padding: 1rem;
 }
 
@@ -201,6 +201,9 @@ form p {
   background-color: var(--background);
   padding: 0.5rem;
   margin: 2rem 5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 .feedback_input_container {
