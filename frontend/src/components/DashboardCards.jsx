@@ -7,7 +7,7 @@ function DashboardCards({ data, handleCheckStar }) {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-row w-11/12 h-full justify-center mr-8 ">
+    <div className="flex flex-row w-11/12 h-50 justify-center mr-8 ">
       <div
         className="border-2 rounded-lg flex justify-between bg-white text-darkGrey w-11/12 mb-8 shadow-lg cursor-pointer "
         id="bitchboardcards"

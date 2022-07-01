@@ -438,7 +438,7 @@ form p {
 .bitchboard-wrapper {
   background-image: url(./assets/wave2.svg);
   background-repeat: no-repeat;
-  height: 99vh;
+  height: 100vh;
   background-size: cover;
 }
 #bitchboardcards {
