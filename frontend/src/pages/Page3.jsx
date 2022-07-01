@@ -7,7 +7,7 @@ function Page3() {
   const [pg3, setPg3] = useState([]);
   console.warn(`${pg3} ${setPg3}`);
   return (
-    <div>
+    <div className="display-flex">
       <Header />
       <NavBar />
       <Notifications />

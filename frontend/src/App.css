@@ -17,7 +17,7 @@ body {
   --title-size: 72px;
   --text-font: "Hind", sans-serif;
   --text-size: 16px;
-  --text-color: black;
+  --text-color: white;
   --color1: #161a1d;
   --color2: #a4161a;
   --color3: #b1a7a6;
@@ -97,8 +97,8 @@ a:hover {
 .login-wrapper input {
   color: var(--text-color);
 }
-.text-login-btn{
-  color: var(--text-color)
+.text-login-btn {
+  color: var(--text-color);
 }
 
 .loginbtn {
@@ -129,6 +129,8 @@ form p {
 
 /* LOGIN PAGE */
 .navbar {
+  right: 0%;
+  bottom: 0%;
   right: 0;
 }
 
@@ -166,15 +168,17 @@ form p {
 /* Feedbacks */
 
 .feedback_container {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: var(--color3);
 }
-.feedback_container h2 {
+/* .feedback_container h2 {
   color: var(--color2);
   font-size: 3rem;
   background-color: var(--background);
   padding: 1rem;
-}
+} */
 
 .feedback_flex_btwn {
   display: flex;
@@ -182,7 +186,7 @@ form p {
 }
 
 .feedback_container_question {
-  background-color: var(--color1);
+  background-color: var(--color2);
   padding: 1rem;
 }
 
@@ -199,24 +203,32 @@ form p {
   background-color: var(--background);
   padding: 0.5rem;
   margin: 2rem 5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 .feedback_input_container {
+  width: 60rem;
   margin: 0 15rem;
-  position: relative;
+  position: fixed;
+  bottom: 20px;
 }
 
 .feedback_input_container input {
   width: 100%;
+  height: 5rem;
+  background-color: #f2edec;
+  opacity: 95%;
   padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .feedback_input_container img {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 0.25rem 1rem;
+  padding: 1.6rem 1rem;
 }
 
 .feedback_fit_content {
@@ -264,11 +276,11 @@ form p {
 }
 
 .report_container.shadow-md img {
-margin: 0 0 0rem 1rem;
+  margin: 0 0 0rem 1rem;
 }
 
 .feedback_main_text {
-  padding-top: 2rem ;
+  padding-top: 2rem;
 }
 /*Progess Bar */
 
@@ -289,6 +301,112 @@ margin: 0 0 0rem 1rem;
 .header-wrapper img {
   width: 10%;
 }
+
+.shawdow {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.test {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  margin: 0;
+}
+
+.piecharth2 {
+  justify-content: center;
+  align-items: center;
+  color: var(--color1);
+  font-size: 24px;
+  display: flex;
+  height: 50%;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.topic-wrapper {
+  margin: 1rem auto;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+  font-family: var(--title-font);
+  background-color: var(--color1);
+}
+
+.topic-title {
+  font-size: 32px;
+  color: var(--color2);
+}
+
+.analysis-wrapper {
+  background-image: url("./assets/wave01.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  margin-right: 10px;
+  width: 80px;
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-items {
+  width: 100px;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar img {
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkDashboardCard {
+  cursor: pointer;
+}
+
+.topic-cards:hover {
+  transform: scale(1.02);
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
 .dashboard-bg {
   background-color: var(--color3);
 }
+
+/* Disclaimer CSS Start */
+
+.disclaimer-button {
+  font-family: var(--title-font);
+  font-size: x-large;
+}
+
+.disclaimer-text {
+  font-family: var(--title-font);
+  font-size: 160px;
+}
+
+.disclaimer-paragraph {
+  font-family: var(--title-font);
+  text-align: center;
+}
+
+.disclaimer-eye {
+  width: 180px;
+}
+
+/* Dislaimer CSS End */

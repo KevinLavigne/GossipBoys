@@ -8,6 +8,8 @@ import { useState } from "react";
 import svg from "../assets/return_button_2.svg";
 import plus from "../assets/plus.png";
 
+import ExportContext from "../contexts/Context";
+
 function ModalTopic() {
   const {
     register,
@@ -62,8 +64,10 @@ function ModalTopic() {
         <button type="button">
           <img
             src={plus}
+            width="15px"
+            height="15px"
             alt="plus button"
-            className="w-9 transition duration-120 ease-out hover:scale-110"
+            className="transition duration-150 ease-out hover:scale-125 "
           />
         </button>
       }
@@ -71,10 +75,14 @@ function ModalTopic() {
       contentStyle={contentStyle}
     >
       {(close) => (
-        <div className="bg-white shadow-lg opacity-95 p-14">
+        <div className="bg-white shadow-lg opacity-95 p-12">
           <div className="flex flex-col">
-            <button type="button" onClick={close} className="flex justify-end">
-              <img src={svg} alt="bouton de retour" className="w-16 mb-12" />
+            <button
+              type="button"
+              onClick={close}
+              className="flex justify-end text-02e494 text-6xl font-bold drop-shadow-md -mt-12 -mr-8"
+            >
+              &times;
             </button>
             <h1 className="flex text-7xl text-darkGrey mb-12">Let's Gossip</h1>
           </div>
