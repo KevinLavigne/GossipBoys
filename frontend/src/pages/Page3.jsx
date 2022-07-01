@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "../components/header";
 import NavBar from "../components/NavBar";
-import Analysis from "../components/Analysis";
+import Notifications from "../components/Notifications";
 
 function Page3() {
   const [pg3, setPg3] = useState([]);
@@ -10,8 +10,7 @@ function Page3() {
     <div className="display-flex">
       <Header />
       <NavBar />
-
-      <Analysis />
+      <Notifications />
     </div>
   );
 }
