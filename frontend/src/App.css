@@ -52,6 +52,7 @@ a:hover {
 .left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 40%;
   height: 100vh;
   background-color: var(--color2);
@@ -68,7 +69,10 @@ a:hover {
   align-items: center;
 }
 .logo {
+  margin: auto;
   display: flex;
+  width: 80%;
+  height: 90%;
 }
 .right {
   display: flex;
@@ -80,6 +84,8 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+.quote-wrapper {
 }
 
 .login-wrapper {
@@ -433,6 +439,9 @@ form p {
 
 .dashboard-bg {
   background-color: var(--color3);
+}
+#disclaimer {
+  height: 100vh;
 }
 
 .bitchboard-wrapper {
