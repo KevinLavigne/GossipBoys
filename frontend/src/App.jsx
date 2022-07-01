@@ -7,6 +7,7 @@ import Page3 from "./pages/Page3";
 import Error404 from "./pages/error404";
 import Feedback from "./components/Feedback";
 import Disclaimer from "./pages/Disclaimer";
+import AnalysisPage from "./pages/AnalysisPage";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/dashboard/:id" element={<Feedback />} />
         <Route path="/user-account" element={<UserAccount />} />
         <Route path="/Page3" element={<Page3 />} />
+        <Route path="/analysis" element={<AnalysisPage />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
