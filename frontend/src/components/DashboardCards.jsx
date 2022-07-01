@@ -8,7 +8,10 @@ function DashboardCards({ data, handleCheckStar }) {
 
   return (
     <div className="flex flex-row w-11/12 h-full justify-center mr-8 ">
-      <div className="border-2 rounded-lg flex justify-between bg-white text-darkGrey w-11/12 mb-8 shadow-lg cursor-pointer ">
+      <div
+        className="border-2 rounded-lg flex justify-between bg-white text-darkGrey w-11/12 mb-8 shadow-lg cursor-pointer "
+        id="bitchboardcards"
+      >
         <div
           className=" flex flex-start linkDashboardCard "
           role="link"
