@@ -53,14 +53,14 @@ function NavBar() {
             />
           )}
         </button>
-        <NavLink to="/user-account">
-          <img
-            src={user}
-            alt="utilisateur"
-            className="w-5 transition duration-150 ease-out hover:scale-125 "
-          />
-        </NavLink>
-        <NavLink to="/">
+
+        <img
+          src={user}
+          alt="utilisateur"
+          className="w-5 transition duration-150 ease-out hover:scale-125 "
+        />
+
+        <NavLink to="/login">
           <img
             src={offButton}
             alt="utilisateur"
