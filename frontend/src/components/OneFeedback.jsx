@@ -21,7 +21,7 @@ function OneFeedback({ el }) {
   return (
     <div className={hide ? "hidden" : "feedback_data_container"}>
       <div className="feedback_flex_btwn">
-        <p>Par {el.name}</p>
+        <p>By {el.name}</p>
         <div className="flex feedback_parent">
           <p>{el.date}</p>
           <button

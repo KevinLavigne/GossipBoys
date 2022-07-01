@@ -7,25 +7,25 @@ function PieChartComponent() {
   const square = [
     {
       key: 0,
-      title: `${dashboardData[0].numberForC}% of Bitchers React this Gossip`,
+      title: `59.01% approves this feedback`,
       value: 30,
       color: `${dashboardData[0].color}`,
     },
     {
       key: 1,
-      title: `${dashboardData[1].numberForC}% of Terry Like it my Bitchers !`,
+      title: `32.27% approves this feedback`,
       value: 20,
       color: `${dashboardData[1].color}`,
     },
     {
       key: 2,
-      title: `${dashboardData[2].numberForC}% of Kevin Like it my Bitchers !`,
+      title: `4.36% approves this feedback`,
       value: 10,
       color: `${dashboardData[2].color}`,
     },
     {
       key: 3,
-      title: `${dashboardData[3].numberForC}% of Alex Like it my Bitchers !`,
+      title: `1.45% approves this feedback`,
       value: 10,
       color: `${dashboardData[3].color}`,
     },
@@ -60,26 +60,26 @@ function PieChartComponent() {
         <PieChart
           data={[
             {
-              title: `${dashboardData[0].numberForC}%`,
-              value: dashboardData[0].numberForC,
+              title: `59.01%`,
+              value: 59.01,
               color: `${dashboardData[0].colorForC}`,
               key: 0,
             },
             {
-              title: `${dashboardData[1].numberForC}%`,
-              value: dashboardData[1].numberForC,
+              title: `32.27%`,
+              value: 32.27,
               color: `${dashboardData[1].colorForC}`,
               key: 1,
             },
             {
-              title: `${dashboardData[2].numberForC}%`,
-              value: dashboardData[2].numberForC,
+              title: `4.36%`,
+              value: 4.36,
               color: `${dashboardData[2].colorForC}`,
               key: 2,
             },
             {
-              title: `${dashboardData[3].numberForC}%`,
-              value: dashboardData[3].numberForC,
+              title: `1.45%`,
+              value: 1.45,
               color: `${dashboardData[3].colorForC}`,
               key: 3,
             },

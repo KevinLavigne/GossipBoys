@@ -7,6 +7,7 @@ import "../App.css";
 import * as yup from "yup";
 
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 const schema = yup.object({
@@ -55,9 +56,11 @@ function LogIn() {
             placeholder="Your Password"
           />
           <p>{errors.password?.message}</p>
-          <button type="submit" className="loginbtn rounded-full mb-5 mt-10">
-            <p className="text-login-btn">Bitch In</p>
-          </button>
+          <Link to="/dashboard">
+            <button type="submit" className="loginbtn rounded-full mb-5 mt-10">
+              <p className="text-login-btn">Bitch In</p>
+            </button>
+          </Link>
           <p className="mb-10 mt-10 pl-3 pr-3 text-white">
             You dont have an account ? <br /> Get close from your company{" "}
           </p>

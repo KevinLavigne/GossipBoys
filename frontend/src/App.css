@@ -207,14 +207,13 @@ form p {
   font-family: var(--text-font);
   font-size: var(--text-size);
   color: var(--color1);
-  width: 60rem;
   margin: 0 15rem;
   position: fixed;
   bottom: 20px;
 }
 
 .feedback_input_container input {
-  width: 100%;
+  width: 500px;
   height: 5rem;
   background-color: var(--text-color);
   opacity: 95%;

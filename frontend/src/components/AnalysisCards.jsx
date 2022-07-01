@@ -10,7 +10,7 @@ function AnalysisCards({ data }) {
           <div
             className={`topic-cards ${data.color} h-6 w-6 mb-2 boder rounded`}
           />
-          <p className="text-xl text-center">{data.comments}</p>
+          <p className="text-xl text-center">{data.text}</p>
           <div className="mt-4 opacity-50">
             <ProgressBar
               completed={data.completed}
