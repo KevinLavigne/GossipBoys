@@ -25,7 +25,7 @@ function Dashboard() {
               .filter((data) => data.check === favorite || "")
               .map((data) => (
                 <li
-                  className="flex flex-row w-11/12 h-full justify-center mr-8 transition duration-700 ease-out hover:scale-105"
+                  className="flex flex-row w-11/12 h-full justify-center mr-8 delay-150 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105"
                   key={data.id}
                 >
                   <DashboardCards
@@ -36,7 +36,7 @@ function Dashboard() {
               ))
           : bitches.map((data) => (
               <li
-                className="flex flex-row w-11/12 h-full justify-center mr-8 transition duration-700 ease-out hover:scale-105"
+                className="flex flex-row w-11/12 h-full justify-center mr-8 delay-150 transition duration-300 ease-out hover:-translate-y-1 hover:scale-105"
                 key={data.id}
               >
                 <DashboardCards data={data} handleCheckStar={handleCheckStar} />

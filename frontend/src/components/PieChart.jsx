@@ -38,11 +38,11 @@ function PieChartComponent() {
           square
             .filter((data) => data.key === index)
             .map((data) => (
-              <div className="test drop-shadow-2xl border-slate-800 rounded-lg h-25 mr-64 flex flex-wrap relative">
+              <div className="test drop-shadow-2xl border-slate-800 rounded-lg h-auto mr-64 flex flex-wrap relative">
                 <div
                   className={`${data.color}   w-11/12 m-auto mt-5 h-10 rounded `}
                 />
-                <h2 className="piecharth2">{data.title}</h2>
+                <h2 className="piecharth2 p-5">{data.title}</h2>
               </div>
             ))
         ) : (
