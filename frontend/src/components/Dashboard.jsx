@@ -4,7 +4,7 @@ import DashboardCards from "./DashboardCards";
 import dashboardData from "../data/dashboardData";
 
 function Dashboard() {
-  const { favorite } = useContext(ExportContext.Context);
+  const { favorite, nameFilter } = useContext(ExportContext.Context);
   const [bitches, setBitches] = useState(dashboardData);
 
   const handleCheckStar = (bitch) => {
@@ -15,9 +15,11 @@ function Dashboard() {
   };
 
   return (
+
     <div className="bitchboard-wrapper">
       <h2 className="underline underline-offset-8 decoration-8 decoration-darkGrey mb-8 pt-2 text-darkRed text-6xl ml-36">
         Bitch Board
+
       </h2>
       <div className="flex flex-col w-full h-3/4 justify-center items-center pt-8">
         {favorite === true
@@ -42,6 +44,7 @@ function Dashboard() {
                 <DashboardCards data={data} handleCheckStar={handleCheckStar} />
               </li>
             ))}
+
       </div>
     </div>
   );

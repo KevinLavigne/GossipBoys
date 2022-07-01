@@ -36,7 +36,10 @@
     "jsx-a11y/click-events-have-key-events": "off",
     "react/jsx-boolean-value": "off",
     "no-unused-expressions": "off",
-    "object-shorthand": "off"
+    "object-shorthand": "off",
+    "jsx-a11y/label-has-associated-control":"off",
+    "no-unused-vars":"off",
+    "react/jsx-props-no-spreading":"off"
   },
   "settings": {
     "import/resolver": {

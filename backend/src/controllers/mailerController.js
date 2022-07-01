@@ -5,7 +5,7 @@ class sendMailer {
   static sendMail = (req, res) => {
     const { email, subject, category } = req.body;
     const message =
-      "An personnality invite you to come bitche on he. this is anonyme don't hesitate to say what you truly think";
+      "Hello, someone invited you to bitch about them , dont wait and start bitching now!  http://localhost:3000/dashboard/5";
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_SENDIN,
