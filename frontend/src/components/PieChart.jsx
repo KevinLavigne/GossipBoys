@@ -47,7 +47,7 @@ function PieChartComponent() {
             ))
         ) : (
           <div className="rounded-lg h-25 mr-64 flex flex-wrap relative">
-            <div className="w-11/12 m-auto mt-5 h-16 rounded" />
+            <div className="w-11/12 m-auto mt-5 h-20 rounded" />
             <h2 className="text-white">
               Waiting for the user click on the chesse dude !!!!!!!!§§§§§§§§§§
               Beurk Beurk Beurk Waiting for the user click on the chesse dude
