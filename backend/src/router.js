@@ -25,8 +25,9 @@ router.post("/items", ItemController.add);
 router.delete("/items/:id", ItemController.delete);
 
 router.post("/sendEmail", mailerController.sendMail);
+router.post("/sendTopics", TopicsController.add);
 
 router.get("/topics", TopicsController.browse);
-router.get("/topics/:id", TopicsController.read);
+router.get("/topics/:usersId", TopicsController.read);
 
 module.exports = router;
